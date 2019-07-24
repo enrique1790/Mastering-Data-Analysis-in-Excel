@@ -1,4 +1,5 @@
-Notes:
+### Basic Excel Syntax
+Video 1: 
 Columns:
 = Sign makes a formula active
 Selecting and dragging down Sums columns based off your formula
@@ -6,8 +7,8 @@ Selecting and dragging down Sums columns based off your formula
 you can also edit formulas in the formula bar
 --> When solving problems it's recommending you use an absolute reference. (Recognized as a $ sign in Excel)
 
-Video 1: 
 Graph: charts --> Scatter --> straight mark scatter
+
 absolute reference: Interest Rate (you can change and adjust the value from this column with having to edit all relative columns.)
 
 Video 2:
@@ -23,4 +24,15 @@ Subtraction "-"
 
 Video 3:
 
+Video 4:
 
+
+### Functions on Arrays
+
+Video 1:
+
+Video 2:
+
+Video 3:
+
+Video 4:
