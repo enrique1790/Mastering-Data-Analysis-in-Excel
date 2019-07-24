@@ -1,5 +1,8 @@
 ### Basic Excel Syntax
+
 Video 1: 
+
+Video 2:
 Columns:
 = Sign makes a formula active
 Selecting and dragging down Sums relative columns based off your formula
@@ -11,7 +14,7 @@ Graph: charts --> Scatter --> straight mark scatter
 
 absolute reference: Interest Rate (you can change and adjust the value from this column with having to edit all relative columns.)
 
-Video 2:
+Video 3:
 Excel uses standard "PEMDAS" Order of operations for arithmetic
 :Parentheses, Exponenets, Multiplication and Division, And Addition and Subtraction"
 
@@ -22,9 +25,24 @@ Divison- use slash "/"
 Addition "+"
 Subtraction "-"
 
-Video 3:
+Assume we want (6-3)(4+2) = 18
+Excel: =(6-3)*(4+2)
 
 Video 4:
+*natural log 
+Excel: "ln"
+Example: =ln(1.5)
+
+*log to the base 2 
+Excel: "log(number,base)"
+Example: =log(1.5,2)
+
+*pi
+Excel: "pi()"
+Example: =1/PI()^0.5)
+
+Generates a Random number between 0 and 1
+Excel: =RAND()
 
 
 ### Functions on Arrays
