@@ -62,6 +62,16 @@ Minimum -->[S&P 500 Index]   ;  [Duke Energy Stock]
 Maximum --> [S&P 500 Index];  [Duke Energy Stock] 
 
 **Regression Model**
+Slope --> Excel =SLOPE(E4:E178,D4:D178)
+
+Y-intercept --> Excel =INTERCEPT(E4:E178,D4:D178)
+
+Correlation --> Excel =CORREL(E4:E178,D4:D178)
+
+R-squared --> Excel =RSQ(E4:E178,D4:D178)
+
+-- > Select D1:D178 & E1:E178 --> Click Scatter Plot --> marked scatter --> trendline options --> display equation on chart
+--> display R-Squared value on Chart
 
 Video 2:
 
