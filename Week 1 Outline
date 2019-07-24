@@ -11,6 +11,15 @@ Graph: charts --> Scatter --> straight mark scatter
 absolute reference: Interest Rate (you can change and adjust the value from this column with having to edit all relative columns.)
 
 Video 2:
+Excel uses standard "PEMDAS" Order of operations for arithmetic
+:Parentheses, Exponenets, Multiplication and Division, And Addition and Subtraction"
+
+Parentheses "(6-3)"
+Exponenets - use caret "^" (for example, "six squared" is "6^2"; "square root of six" is " 6^(.5)")
+Multipliations- use asterisk "*"
+Divison- use slash "/"
+Addition "+"
+Subtraction "-"
 
 Video 3:
 
