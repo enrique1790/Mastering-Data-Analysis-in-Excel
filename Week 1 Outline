@@ -48,12 +48,20 @@ Excel: =RAND()
 ### Functions on Arrays
 
 Video 1:
-S&P 500 INDEX Column:
-Excel: =LN(B4/B5)
+Columns:
+S&P 500 INDEX:  -->Excel: =LN(B4/B5)
+Duke Energy Stock: -->Excel: =LN(C4/C5)
 
-Duke Energy Stock Column:
-Excel: =LN(C4/C5)
+**Summarizing quantitative data**
+Columns:
+Average Month Return --> [S&P 500 Index] AVERAGE(D4:D178) ; [Duke Energy Stock] AVERAGE(E4:E178)
+Average Anuual Return --> [S&P 500 Index] Excel: =G6*12 ;  [Duke Energy Stock] Excel: =H6*12
+Standard Deviation of monthly Returns --> [S&P 500 Index]  Excel: =STDEV.P(D4:D178);  [Duke Energy Stock] 
+Annualized Stard Deviation of Returns --> [S&P 500 Index];  [Duke Energy Stock] 
+Minimum -->[S&P 500 Index]   ;  [Duke Energy Stock] 
+Maximum --> [S&P 500 Index];  [Duke Energy Stock] 
 
+**Regression Model**
 
 Video 2:
 
