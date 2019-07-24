@@ -61,6 +61,7 @@ Annualized Stard Deviation of Returns --> [S&P 500 Index];  [Duke Energy Stock]
 Minimum -->[S&P 500 Index]   ;  [Duke Energy Stock] 
 Maximum --> [S&P 500 Index];  [Duke Energy Stock] 
 
+Video 2:
 **Regression Model**
 Slope --> Excel =SLOPE(E4:E178,D4:D178)
 
@@ -73,8 +74,10 @@ R-squared --> Excel =RSQ(E4:E178,D4:D178)
 -- > Select D1:D178 & E1:E178 --> Click Scatter Plot --> marked scatter --> trendline options --> display equation on chart
 --> display R-Squared value on Chart
 
-Video 2:
-
-Video 3:
+Video 3: Select Either Date, S&P 500 Index, Duke Energy Stock
+**sort**
+Select Entire S&P 500 Column --> Sort -->  click descend --> Make sure Expand the selection is selected then click sort
 
 Video 4:
+Tools --> Solver
+
