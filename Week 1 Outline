@@ -48,6 +48,12 @@ Excel: =RAND()
 ### Functions on Arrays
 
 Video 1:
+S&P 500 INDEX Column:
+Excel: =LN(B4/B5)
+
+Duke Energy Stock Column:
+Excel: =LN(C4/C5)
+
 
 Video 2:
 
