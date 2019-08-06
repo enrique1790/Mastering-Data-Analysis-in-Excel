@@ -39,6 +39,12 @@ Set up a column of “If” statements and then each day where Dow return > Dupo
 
 Question: How many days out of the 252 trading days in 2010 did Dow outperform Dupont?
 
+Answer: #4 my steps:
+
+(1) Insert a new column applied ‘IF’ statement [F3=IF(B3>D3, 1, 0)]
+
+(2) Sum the area F3:F254 (since only the value of ’1’ counted, the sum will be the # of years Dow outperformed Dupont)
+
 5. The Excel spreadsheet provided at the beginning of this practice quiz, gives one year’s daily continually compounded returns for 
 two chemical company stocks, Dow and Dupont, and the S&P 500, a weighted index of 500 large company stocks. Use this spreadsheet to 
 answer the question.
@@ -62,6 +68,8 @@ asset. For example, if a stock returns 15% per year, and the risk-free asset ret
 Question: Assume a risk-free asset returns 2% per year, and the standard deviation of returns of Dupont stock is 20%. What is the
 Sharpe Ratio for Dupont stock for 2010? Give the answer to two digits to the right of the decimal place.
 
+Answer:Just sum every daily rate.
+
 7. Excel Problem Type: Optimization using the “Solver” plug-in
 
 Problem Information: Assume that at a particular gas station, the quantity of automobile fuel sold in a week is a function of the fuel’s
@@ -82,7 +90,15 @@ Answer:
 in the question 1000x – 300x^2. Please note that C1 is x.
 *In Solver, the objective cell should be the cell containing the weekly revenue, which is C2. You want to maximize C2. The variable cell should be the cell containing the price per gallon, which is C1. Hit Solve.
 
+#7 Calculate the price (x) maximizes weekly revenue with quantity sold (1,000-3,00x)
+
+(1) Build up a column of (x) and another column of f(x)=1,000x-3,00x^2
+
+(2) Drop the 4 options into the (x) column and generate corresponding values of f(x) which can be directly compared
+
 Link: https://www.coursera.org/learn/analytics-excel/discussions/weeks/1/threads/spFAyPzUEeiwGQqiLAmKog
+
+
 
 8. The Excel spreadsheet provided at the beginning of this practice quiz, gives one year’s daily continually compounded returns for
 two chemical company stocks, Dow and Dupont, and the S&P 500, a weighted index of 500 large company stocks. Use this spreadsheet to 
