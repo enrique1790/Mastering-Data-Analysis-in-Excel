@@ -30,6 +30,13 @@ population standard deviation of returns by the square root of 12.
 Question 4: Assuming the risk-free rate is 1.5% per year over the full 12-year interval measured, which asset had the higher 
 Sharpe ratio: SPY or RSP?
 
+For Quiz 3&4, step by step guide:
+1. Calculate 12 year average return using Ln(May 2015/May 2003). Adj Close price of the beginning and the end.
+2. Calculate standard deviation of the monthly return using "stdev" excel formula and multiply it with squared root of 12.
+3. Sharp ratio = (12 year return - RF)/standard deviation
+
+Link: https://www.coursera.org/learn/analytics-excel/discussions/weeks/1/threads/tnfLZW5NEeadIA4VtDgYqw?page=4
+
 5. For the asset you chose in Question 4, what was the Sharpe ratio? Round your results to two decimal places.
 
 6. In the month ending on which date did Amazon achieve the highest returns?
@@ -60,6 +67,7 @@ yet. Then, there are two constraints: the price must be greater than or equal to
 
 *Hit Solve.
 
+Link: https://www.coursera.org/learn/analytics-excel/discussions/weeks/1/threads/7HmCtxfyEeeq4gqhD-WaKA
 
 
 
