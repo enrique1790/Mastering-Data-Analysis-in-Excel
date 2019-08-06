@@ -14,6 +14,7 @@ value for R-squared).
 Comment:
 I would recommend not using the scatter plot but instead calculate slope and r-squared with a formula. That seems to give 
 the accurate answer. I also had the same problem.
+Link: https://www.coursera.org/learn/analytics-excel/discussions/weeks/1/threads/tnfLZW5NEeadIA4VtDgYqw?page=3&sort=createdAtDesc
 
 3. What is the Y-intercept, in percent? Use the "trendline" but double-check against the "intercept" function.
 
