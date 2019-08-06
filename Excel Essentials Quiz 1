@@ -8,15 +8,19 @@ When you use “trendline” option for slope, R-squared, and the y-intercept, d
 formula answers.
 
 Question 1: What is the slope of the best-fit line (rounded to two decimal places)?
+Formula: =SLOPE( G2:G145,H2:H145)
 
 2. What is the coefficient of determination (R-squared)? Use the "rsq" Excel function (Trendline in Excel may give an inaccurate 
 value for R-squared).
 Comment:
 I would recommend not using the scatter plot but instead calculate slope and r-squared with a formula. That seems to give 
 the accurate answer. I also had the same problem.
+
+Formula:=RSQ(G2:G145,H2:H145)
 Link: https://www.coursera.org/learn/analytics-excel/discussions/weeks/1/threads/tnfLZW5NEeadIA4VtDgYqw?page=3&sort=createdAtDesc
 
 3. What is the Y-intercept, in percent? Use the "trendline" but double-check against the "intercept" function.
+Formula: =INTERCEPT(G2:G145,H2:H145)
 
 4. Answer Question 4 and 5 based on the information below:
 
@@ -51,10 +55,13 @@ Link: https://www.coursera.org/learn/analytics-excel/discussions/weeks/1/threads
 
 6. In the month ending on which date did Amazon achieve the highest returns?
 Note: Use "paste special" and choose "values and number formats" to keep return values from changing.
+Formula: =MAX(H2:H145)
 
 7.What was the monthly return from the question above?
+Formula =INDEX(A2:A146,MATCH(MAX(H2:H145),H2:H145,0))
 
 8. What was Duke Energy’s return that same month?
+Formula =INDEX(I2:I145,MATCH(MAX(H2:H145),H2:H145,0))
 
 Answer: Month of Maximum return Q 6,7,8
 " I found the Max revenue using max function ( on newly created column using paste special) and then i used "Vlookup" function to find 
