@@ -51,3 +51,16 @@ quick reference.
 
 10. What is the monthly revenue at that price per pound? ( , indicates thousands)
 
+## Q9 & Q10 can be done on anywhere in Excel. No need to download additional workbook.
+*Leave cell D1 empty for the moment. In cell D2, enter the formula =-400*D1+10000 . In cell D3, enter =D1*D2
+
+*Set up Solver as follow. The objective cell should be the cell containing the revenue amount. The variable cell is the cell that will vary,
+so it should be the cell containing the price per pound. For the moment, these two cells are still showing 0, since Solver has not been run
+yet. Then, there are two constraints: the price must be greater than or equal to 5 and smaller than or equal to 25.
+
+*Hit Solve.
+
+
+
+
+
