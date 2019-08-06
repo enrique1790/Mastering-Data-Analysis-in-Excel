@@ -11,6 +11,9 @@ Question 1: What is the slope of the best-fit line (rounded to two decimal place
 
 2. What is the coefficient of determination (R-squared)? Use the "rsq" Excel function (Trendline in Excel may give an inaccurate 
 value for R-squared).
+Comment:
+I would recommend not using the scatter plot but instead calculate slope and r-squared with a formula. That seems to give 
+the accurate answer. I also had the same problem.
 
 3. What is the Y-intercept, in percent? Use the "trendline" but double-check against the "intercept" function.
 
