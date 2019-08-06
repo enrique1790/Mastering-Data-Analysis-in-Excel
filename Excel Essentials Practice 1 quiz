@@ -77,6 +77,13 @@ a maximum value for a function f(x). The price x is in the Solver “variable ce
 
 Question: What is the price x that maximizes weekly revenues?
 
+Answer:
+* For the moment, leave cell C1 empty and enter this formula into cell C2: =1000*C1-300*C1^2 This is the formula for weekly revenue given
+in the question 1000x – 300x^2. Please note that C1 is x.
+*In Solver, the objective cell should be the cell containing the weekly revenue, which is C2. You want to maximize C2. The variable cell should be the cell containing the price per gallon, which is C1. Hit Solve.
+
+Link: https://www.coursera.org/learn/analytics-excel/discussions/weeks/1/threads/spFAyPzUEeiwGQqiLAmKog
+
 8. The Excel spreadsheet provided at the beginning of this practice quiz, gives one year’s daily continually compounded returns for
 two chemical company stocks, Dow and Dupont, and the S&P 500, a weighted index of 500 large company stocks. Use this spreadsheet to 
 answer the question.
