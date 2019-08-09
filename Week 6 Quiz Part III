@@ -1,0 +1,54 @@
+
+Mentor Hints for Week 6 Quiz Part III
+Heng YeWeek 6 · 10 months ago
+Click to download week 6 Excel workbook
+
+Question 1 On your test set results, what is the conditional entropy of default, conditional on your test classifications? Hint:
+Refer back to the Test Incidence, Positive Predictive Value and Negative Predictive Value of your Test from Part 1
+Conditional entropy of default is H( X | Y )
+
+Question 2 On your test set results, what is the Mutual Information, or information Gain, in average bits per event 
+(information gain calculated in units of bits per event)?
+Mutual information (Info. gain) calculated in units of bits per event and information Gain, in average bits per event are the same. 
+The question was repeating itself to make it more clear.
+
+Question 3 What is the Percentage Information Gain (PIG) of your test?
+Percentage Information Gain (PIG) = Information Gain/initial entropy
+
+Question 4 How many dollars does the bank save, for every bit of information gain achieved by your model?
+Dollar saving = your dollar saved per event / your information gain. The numbers given in the question are used as samples, 
+just replace those numbers with the numbers you have.
+
+Question 5 Information Gain of Eggertopia Scores over the Base Rate On the test set, What is the information gain, in average 
+bits per event, over the base rate of (.25, .75) offered by the Eggertopia Scores?
+
+Given
+Base Rate = (0.25, 0.75)
+PPV = 0.48 [from part 2]
+NPV = 0.888 [from part 2]
+
+Find
+Information Gain
+
+Calculate
+Base rate = H(X) = .25*log[2](1/.25)+.75*log[2](1/.75)
+Model rate = H(X|Y) = c*H(PPV, 1-PPV) + d*H(1-NPV, NPV)
+Information Gain = Base rate - Model rate = H(X) - H(X|Y)
+
+Question 6 On the test set, what is the Eggertopia scores’ Percentage Information Gain (PIG)?
+Percentage Information Gain (PIG) = Information Gain/initial entropy
+
+Question 7 If Eggertopia data were free, and your model were unavailable, what would the dollar savings per bit of information
+extracted be?
+Saving per bit = $ saved / bits extracted
+
+Question 8 What is the incremental information gain of the Eggertopia scores, over your model, in average bits per event, if any?
+If your model has higher information gain that eggertopia, Just give a negative number.
+
+Question 9 What is the maximum (break-even) price the bank should pay for Eggertopia scores, per score, if your model and data are 
+already available?
+If your model is better than Eggertopia, then pay negative value to Eggertopia. The answer will depend on your model.
+
+Question 10 At the above maximum (break-even) price per score, what would be the value per bit of incremental information gained 
+from the Eggertopia scores? Give your answer in $/bit.
+Dividing maximum price the bank should pay (Question 8) by incremental information gain (Question 9)
