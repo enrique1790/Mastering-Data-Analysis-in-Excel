@@ -102,3 +102,28 @@ Such a line has a slope of 1, which implies that an improvement in True Positive
 increase in False Positive rate, regardless of the thresholds being used, i.e., every time the model correctly identified one more
 bomber, it also falsely identified a seagull as a bomber at the same time. Every time the alarm goes off, there is a 50/50 chance 
 that it is either a bomber or a seagull. Such a model is useless.
+
+Q9 & Q10: 
+Link: https://www.coursera.org/learn/analytics-excel/discussions/weeks/5/threads/ErVs9YDREei_Sw7NSedeKA
+
+Comments:
+"but 1/12=0/0833, not 0.033, why the answer of 0.033 is true?"
+
+Divide the beta on x(1) by 12, not divide 1 by 12. The beta on x(1) is 0.4, 0.4/12=0.033. The original formula for standard deviation 
+when using "age in months" is
+
+When "age in months" is used, the above standard deviation is magnified by a factor of 12 (age in months = age in years * 12)
+
+As shown, the standard deviation is magnified by a factor of 12. Substitute this magnified standard deviation into the formula that
+
+You will have
+
+Remember that R is the correlation coefficient. Hence, if "age in months" is used instead of "age in years", the original coefficient 
+shrink by a factor of 12, meaning it needs to be divided by 12.
+
+
+
+
+
+
+
