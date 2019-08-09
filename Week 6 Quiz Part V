@@ -1,0 +1,19 @@
+Mentor Hints for Week 6 Quiz Part V
+
+Grading Criteria
+
+You will be asked to provide feedback to your peers in the following areas:
+Does the submitted model include at least 2 of the 6 pieces of data about the credit card applicants (age, years at current employer, years at current address, income over the past year, current credit card debt, and current automobile debt)? (2 pts)
+Some criteria is better than others. Variables with higher correlation tends to be have more predicting power.
+
+2. Is the minimum cost per event an acceptable cost per event? (3 pts)
+
+=>$1150 - poor
+>100 to <= 1150 – good
+>800 to <= 1000 – very good
+<800 – excellent
+
+3. Does the learner provide a clear recommendation for which model (or combinations of models) to use to select future credit card 
+applicants? (2 pts)
+
+4. Does the learner provide an explanation for their choice which references at least two topics/points from the course? (3 pts).
