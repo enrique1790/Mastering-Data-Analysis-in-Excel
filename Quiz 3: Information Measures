@@ -1,0 +1,90 @@
+### Mentor Hints for Week 3 Graded Quiz
+
+
+Excel:
+https://www.coursera.org/learn/analytics-excel/supplement/04Op3/excel-workbook-for-information-measures
+
+Question 1 Suppose we have two coins: one “fair” coin, where p(head) = p(tails) = .5; and an “unfair” coin where p(heads) does not equal
+p(tails). Which coin has a larger entropy prior to observing the outcome?
+Less is known about the result of fair coin and thus it has higher entropy. In other words, we know more about the unfair coin since it
+favors one direction than the other, therefore unfair coin has lower entropy.
+
+Question 5 On the “Information Measures” spreadsheet 4-1, given a = 0.3, c = 0.2, suppose now we also know that H(X,Y) = H(X) + H(Y). 
+What is the joint probability e?
+
+H(X,Y) = H(X) + H(Y) implies independence, therefore e = a*c
+
+OR
+
+Given
+a = 0.3
+c = 0.2
+
+Solve
+e
+
+Calculation
+
+1) b, d
+2) H(X), H(Y), and H(X,Y)
+3) e using the following equation
+H(X,Y)	= e*log(1/e)	+ f*log(1/f)	+ g*Log(1/g)	+ h*log(1/h)
+
+Question 7-8: Monty Hall Problem Consider the Monty Hall problem, but instead of the usual 4 doors, assume there are 5 doors to choose
+from. You first choose door #1. Monty opens doors #2 and #3. What is the new probability that there is a prize behind door #4?
+
+Again, consider the Monty Hall problem, but with 5 doors to choose from instead of 4. You pick door #1, and Monty opens 2 of the other
+4 doors. How many bits of information are communicated to you by Monty when you observe which two doors he opens?
+
+We have three situations for doors:
+1) the ones you choose but not yet opened (a)
+2) the ones Monty opened and no prize (b)
+3) the ones left (c)
+
+For 1), probability of prize is constant because Monty's behavior does not change the prize behind the door you choose. P1 = a/(a+ b+ c)
+For 2), P = zero because Monty shows you there is no prize behind the door. P2 = 0
+For 3), the probability of prize increased because Monty can't choose the doors with prizes. The original probability that the prize is behind doors not chosen is constant and equal to 1 - P1 = (b+c)/(a+b+c). But now, b is out of the equation, so P3 = c/(a+c)
+
+Question 9: Learn from One Coin Toss
+
+B stands for “the coin is fair”, ~B stands for “the coin is crooked”. The p(heads | B) = 0.5, and p(heads | ~B) = 0.4. Your friend 
+tells you that he often tests people to see if they can guess whether he is using the fair coin or the crooked coin, but that he is 
+careful to use the crooked coin 70% of the time. He tosses the coin once and it comes up heads.
+
+What is your new best estimate of the probability that the coin he just tossed is fair?
+
+Given:
+P(heads | B) = 0.5
+P(heads | ~B) = 0.4
+P(~B) = 0.7
+
+Solve:
+P(B | heads)
+
+Calculations:
+P(B) = 1 - P(~B)
+P(heads) = P(B) * P(heads | B) + P(~B) * P(heads | ~B)
+P(B | heads) = P(heads | B) * P(B) / P(heads)
+
+Question 10: Learn from One Coin Toss
+Suppose you are given either a fair die or an unfair die (6-sided). You have no basis for considering either die more likely before 
+you roll it and observe an outcome. For the fair die, the chance of observing “3” is 1/6. For the unfair die, the chance of observing
+“3” is 1/3. After rolling the unknown die, you observe the outcome to be 3.
+
+What is the new probability that the die you rolled is fair?
+
+Given:
+P(3 | fair) = 1/6
+P(3 | unfair) = 1/3
+P(fair) = 0.5 and P(unfair) = 0.5
+
+Solve:
+P(fair | 3)
+
+Calculations:
+P(3) = P(fair) * P(3 | fair) + P(unfair) * P(3 | unfair)
+P(fair | 3) = P(3 | fair) * P(fair) / P(3)
+
+Other Hints
+Hints are given as comments for your answer, you will see them after submitting.
+Let me know if you have further questions here.
