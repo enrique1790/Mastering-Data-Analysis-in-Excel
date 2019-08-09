@@ -1,3 +1,7 @@
+Q1:Getting a z-score of 1.25 by (180-155)/20 is the first step. Use Excel's NORMSDIST function to find the percentage of athletes that 
+weigh less than or equal to 180 pounds, =NORMSDIST((180-155)/20) . Subtract the result from 1 and you have the percentage of athletes 
+thatweight more than 180 pounds.
+
 ### Mentor Hints for Week 4 Graded Quiz
 Please post your questions here, I will answer them and summarize them in the main body. Happy learning!
 
