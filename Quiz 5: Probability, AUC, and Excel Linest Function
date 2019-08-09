@@ -1,0 +1,104 @@
+Excel
+
+It's last weeks spreadsheet. The Linear -Regression Workbook. The second tab '5-2 Central Limit Theorem".
+
+Question 1 Suppose we have a 250 data points distributed from 0 to 100. If we have 30 data points in bin [10, 20], how tall is the 
+bin [10, 20] in the “probability histogram”?
+
+Height of the bin [10, 20] in the “probability histogram” = number of data points in the range of the bin divided by the total number 
+of data points
+
+Question 2 Suppose we have a range of outcomes between -10 to 10 that we divide into 5 bins of equal width. What is the smallest
+bin mean among the 5 bins?
+The smallest bin mean among the 5 bins=(-10+(-6))/2
+
+Comment:
+the question tells you there are outcomes from -10 to 10 divided equally over 5 bins. that's 20 outcomes divided by 5 bins, so each 
+bin has a width of 4 outcomes.
+
+You can visualize the range of each bin in this way.
+Bin 1: -10 to -6
+Bin 2: -6 to -2
+Bin 3: -2 to 2
+Bin 4: 2 to 6
+Bin 5: 6 to 10
+and the bin with the smallest mean will be the one with the smallest range of outcomes from -10 to -6.
+Therefore the mean of Bin 1 is (-10+(-6))/2
+
+Question 3 True/False: A Gaussian distribution is more skewed than a uniform continuous distribution with the same variance.
+Gaussian distribution and uniform continuous distribution are both symmetric, and skewness is 0.
+
+Question 4 A Gaussian distribution has higher entropy than a uniform continuous distribution with the same variance.
+
+Entropy(Gaussian distribution)=2.05+log_2⁡σ
+Variance(uniform continuous distribution)=(b-a)^2/12=σ^2
+Entropy(uniform continuous distribution)=log_2⁡ (b-a)=1.79+log_2⁡σ
+Therefore, Entropy (Gaussian distribution) > Entropy(uniform continuous distribution) with the same variance.
+
+Question 5 Suppose we have a continuous uniform distribution on [-2,4]. What is its variance?
+Variance(uniform continuous distribution)=(b-a)^2 / 12
+
+Question 6 True/False: In a scatterplot of 100 ordered pairs drawn from two Gaussian random variables with mean = 0, variance = 1, 
+and correlation R = 0, it is possible to get a correlation of the ordered pairs = 0.99.
+
+Think about what a correlation of 0.99 means.
+
+Comment:
+Is the correct answer "False"? Correlation measures the degree of associations between two variables. The order pairs were drawn
+from two Gaussian random variables with correlation R=0, that means the two random variables are independent.
+If R=0.99, that means the ordered pairs are almost perfectly associated. That is not possible if the ordered pairs are drawn from 
+two independent sources.
+
+Question 7 Which of the following statements about over-fitting is false:
+Please refer to lecture video.
+Link: https://www.coursera.org/learn/analytics-excel/discussions/weeks/5/threads/9mmOtcMhEeiTdg5seYVqZA
+
+Comment:
+The Modification Factor does have an impact on the cost per event.
+
+1. Raw scores (column A) are standardized (column B) and divided by the Modification Factor (column C) to bound the raw scores 
+in the range [-3.5,3.5].
+
+2. The final scores in column D, which are copied over from column C, are then compared to the threshold in row 10 (H10:ER10). 
+If the final score is greater than the threshold, then Excel returns the value in the Reversed Outcome column (column F). The 
+returned values are stores in H225:ER424
+
+3. H225:ER424 is then summed up to give the total False Positive at each threshold (Row 13).
+
+4. The cost per event (row 17) at the threshold 3.5 is calculated by "=(($I$4*H16)+($I$2*H13))/$D$8", at the threshold 3.45
+is calculated by "=(($I$4*I16)+($I$2*I13))/$D$8", and so on.
+
+The key observation here is that the formula for the cost per event uses inputs from row 13, which implicitly uses the
+Modification Factor (as I explained in Step 1 to 3 above). This is just one way the cost per event implicitly depends on the 
+Modification Factor
+
+Changing it from -1 to -2 does change the minimum cost, that's because the way the cost per event is calculated. 
+Cost Per Event = ((FN*cost per FN) + (FP*Cost per FP)) / Total Events. First, changing the factor from -1 to -2 does not 
+change the sign of the adjusted final scores, which means if the final score is above the threshold in row 10 when the factor is 1,
+it is likely still above the threshold. Second, changing the factor from -1 to -2 halves the previous result. The thresholds in 
+row 10 change by a tiny increment of 0.05. All the unadjusted standardized scores in column B are greater than 2*0.05.
+Halving them will not change the range a score falls in. Combining these two reasons, it is not difficult to see why changing 
+the Modification Factor from -1 to -2 has no impact on the minimum cost per event.
+
+However, changing the Modification Factor from -1 to 1 will obviously change the range an adjusted final score falls in. 
+If an adjusted final score is above the threshold when the factor is -1, it will be below the same threshold when the factor
+is changed to 1.
+
+=MIN(H17:ER17) returns $1,250 when the factor is 1 but returns $975 when the factor is -1.
+
+
+Question 8:
+A traditional academic point system for grading AUC.
+
+.90-1 = excellent (A)
+.80-.90 = good (B)
+.70-.80 = fair (C)
+.60-.70 = poor (D)
+.50-.60 = fail (F)
+Reference: http://gim.unmc.edu/dxtests/roc3.htm )
+
+AUC of 0.5 probably had resulted from diagonally straight ROC curve that originates from the origin (0,0) and ends at (1,1). 
+Such a line has a slope of 1, which implies that an improvement in True Positive rate always comes at the price of an equal amount
+increase in False Positive rate, regardless of the thresholds being used, i.e., every time the model correctly identified one more
+bomber, it also falsely identified a seagull as a bomber at the same time. Every time the alarm goes off, there is a 50/50 chance 
+that it is either a bomber or a seagull. Such a model is useless.
