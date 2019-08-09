@@ -12,7 +12,7 @@ However, I think the correct question to this question is 2.09, not the 1.87 sug
 
 The argument for the NORMSINV function should have been 0.5+0.95/2, not 0.95 as suggested in the explanation. The NORMSINV function returns the z-score such that NORM.S.DIST(z)=probability. In the context of the normal bell-shaped curve, the probability of the z-score for the upper-bound of the 95% confidence interval is the area to the left of the upper bound, which equals to 0.5+0.95/2.
 
-### Mentor Hints for Week 4 Graded Quiz
+### Mentor Hints for Week 4 Graded Quiz (12 Questions)
 Please post your questions here, I will answer them and summarize them in the main body. Happy learning!
 
 Helpful Excel function
