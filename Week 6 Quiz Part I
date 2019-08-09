@@ -1,0 +1,81 @@
+Mentor Hints for Week 6 Quiz Part I
+Hi Class, feel free to leave your questions below and I will answer them.
+
+Click to download Excel workbook
+
+tab 7-3
+Training set: 1 - 200
+Test set: 201 - 400
+
+Common mistakes
+When you use test dataset, make sure you use the outcome for the test dataset too.
+Sample Answer for Final Project
+https://www.coursera.org/learn/analytics-excel/supplement/OHBGM
+
+Question 1
+Your model should have at least two data points.
+
+For instance,
+[Credit Score from -3.5 - 3.5] = constant + a*X1 + b*X2 + c*X3
+
+Note: Although the quiz tool will tell you the answer you entered is correct, this is an automated answer. If fact, there is no 
+exact answer and working through the final project will tell you if you have a viable model.
+
+To build your model
+
+There are many ways to build your model, and here is one simple way using Excel:
+1) Identify highly correlated variables with the Outcome(the column with 1 and 0) by using LINEST function in Excel
+2) Run regression analysis with the best correlated variables (Data analysis/Regression). More about Regression in Excel
+
+Question 2
+<.5 is not valid
+.5 to < .59 is low value
+.6 - .75 is ok
+.75 - .86 is very good
+>.86 is probably too good to be true
+
+Question 3
+
+If the test set AUC is much worse than the training set AUC, consider making your model simpler – probably using fewer input variables
+– as it is probably over-fitting the training set data.
+
+Ideally, you would like a model to have only slightly lower performance on “new” data on which it was not trained. If you can develop
+a model exclusively on training set data that has an AUC over [.72] and the training set data also shows an AUC over [.68], you are
+doing very well. But don’t over-optimize your model on the test set data either, or it will turn out to be over-fitted on new,
+“validation set” data.
+
+Question 4
+Thresholds greater than 2.5 – not utilizing full range
+Thresholds less than 2.5 – not utilizing full range
+
+Question 5 (Don't include "$")
+Any answer > $1250 has no incremental value – is simply wrong
+Any answer > $1000 is of minimal value
+
+Question 6
+If you find that your costs per event on the test set are much higher than your costs per event on the training set, 
+consider making your model simpler – probably using fewer input variables – as it is probably still over-fitting the training set data.
+Problems that are were not obvious at the ROC-curve stage may emerge when minimizing costs.
+
+Question 7 (Don't include "$")
+Must be $1250 minus previous answer.
+
+<=$100 - poor
+<100 to <= 250 – good
+< 250 to <= 450 very good
+>450 – excellent
+
+Question 8 (Don't include "days")
+Take the earning from each card and multiply by the number of credit card applicants per day will give you the money earned per day.
+
+More than a week – poor
+4-7 days – very good
+2-3 days – excellent
+1 day – too good to be true!
+
+Question 9 (Don't include "%")
+
+Defaulters test incidence 0% - poor
+Defaulters test incidence 70 - 100% - poor
+Defaulters test incidence >0 < 25% - ok
+Defaulters test incidence >25% < 70% good
