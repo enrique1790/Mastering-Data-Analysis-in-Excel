@@ -2,6 +2,16 @@ Q1:Getting a z-score of 1.25 by (180-155)/20 is the first step. Use Excel's NORM
 weigh less than or equal to 180 pounds, =NORMSDIST((180-155)/20) . Subtract the result from 1 and you have the percentage of athletes 
 thatweight more than 180 pounds.
 
+Q2:"What upper bound for y will ensure that 95% of all possible outcomes for y will be below it?"
+This is Practice 2 (Regression Model and PIG) Question 5.
+The answer given by Coursera is =0.7+NORMSINV(0.95)*0.71 evaluates to 1.87.
+
+However, I think the correct question to this question is 2.09, not the 1.87 suggested in the explanation. The difference is caused by the argument for the NORMSINV function.
+
+=0.7+NORMSINV(0.95)*0.71 evaluates to 1.87 (coursera answer) =0.7+NORMSINV(0.5+0.95/2)*0.71 evaluates to 2.09.
+
+The argument for the NORMSINV function should have been 0.5+0.95/2, not 0.95 as suggested in the explanation. The NORMSINV function returns the z-score such that NORM.S.DIST(z)=probability. In the context of the normal bell-shaped curve, the probability of the z-score for the upper-bound of the 95% confidence interval is the area to the left of the upper bound, which equals to 0.5+0.95/2.
+
 ### Mentor Hints for Week 4 Graded Quiz
 Please post your questions here, I will answer them and summarize them in the main body. Happy learning!
 
@@ -35,6 +45,13 @@ Sigma(Z)
 
 Calculations
 Sigma(Z) = Sigma(X+Y) = SQRT((Sigma(X))^2+(Sigma(Y))^2)
+
+Comment:
+"If X and Y are random, and X's mean = 10, variance = 3, and Standard Deviation = 1.732050, how can I calculate Y's variance if y=2x+3.
+I have been cheking the formulas and I don't find the solution."
+The variance of y is 12. When you stretch a Gaussian distribution with a constant, the variance is magnified by the square of the 
+constant. Y=2x+3. The constant is 2. Hence, the original variance is magnified by a factor of 2^2=4. 4*3=12. This is Q3 of the first 
+practice quiz
 
 Question 4
 Use the Markowitz Portfolio Optimization Spreadsheet, 5-4 to solve the problem.
