@@ -56,9 +56,53 @@ practice quiz
 Question 4
 Use the Markowitz Portfolio Optimization Spreadsheet, 5-4 to solve the problem.
 
+Q5:
+The correlation is not equal to the sum of the products of the z-scores. After you have computed the z-scores for each data point, 
+use the CORREL function. The CORREL function takes two arguments, array1, array2. array1 is all z-scores for the X data set, array2 
+is the z-scores for the Y data set.
+Tip: To calculate the Z-score, instead of using the formula (xi-mean)/sigma, you can use Excel's STANDARDIZE function.
+
 Question 6
 Standardization: (x - average)/std. deviation
 All other numbers can be found with Excel formula.
+
+Comments:
+Alpha is the y-intercept of the best fit line. It is not explained in great details in the lecture video, but it can be easily computed
+if the slope and one point on the line is known. Or, if you have two sets of data points, plot a trend-line and Excel will display 
+the equation of the linear model in the form y=beta*x+alpha.
+
+For standardized data, alpha is 0 and the linear model becomes y=beta*x. The video mentioned it briefly. But you can experiment that 
+yourself. If you have two sets of data, standardize them, then plot the z-scores on a XY-plane, the trend-line (or the best fit line)
+runs through the origin.
+
+Beta is the slope of the best fit line. No further explanation is needed.
+
+R is the correlation coefficient. Usually, the correlation coefficient is given by Covariance(X,Y) / sigma(x)*sigma(y). Sigma is the 
+standard deviation. However, for standardized data, R=Covariance=Beta. The instructor briefly mentioned the proof. I worked out the 
+somewhat complicated details and present them below for those who are interested.
+
+Standardized values are the z-scores. Covariance of standized values is Division by n, since this is a population covariance. 
+For z-scores are standardized data, µx = 0 = µy . The above formula is reduced to
+
+The correlation coefficient of the z-scores is therefore
+
+Since the data points are standardized values, δ_𝑧𝑥 =1=δ_𝑧𝑦The correlation coefficient formula thus is reduced back to the covariance
+formula. Hence, for standardized values, covariance=R
+To prove the equality with beta, the mean squared errors of a best fit line is
+
+Consider β as an unknow variable and differentiate the above function.This involes using the power rule and chain rule of 
+differentiation. I will ommit the details here, since this is not a calculus class. After applying first the power rule, then
+the chain rule, then simplification, the derivative is
+
+Set the derivative to 0 and solve for β.
+
+Taking into consideration that the data are standardized and the standard deviation of standard normal distribution is 1
+Substitute this observation back to the expression for β and put the summation sign back
+
+This is exactly the formula for covariance for the standardized values.Hence, we prove that for standardized values 
+(the z-scores), β=R=Covariance
+
+Link: https://www.coursera.org/learn/analytics-excel/discussions/weeks/4/threads/9hxZVcMhEeiERhLphT2-QA?page=2
 
 Question 7
 R^2 = 1- (error)^2
@@ -79,3 +123,19 @@ z-score for the upper-bound of the 95% confidence interval is the area to the le
 Question 8
 Error = sqrt(1 - R^2)
 Differential Entropy=-log_2(Error)
+
+Q9: 
+LINEST Function can be automatically calculated using 'Analysis Toolpack' excel Add-In. Once this add is loaded into the excel, you may
+want to click on Data --> Data Analysis and select 'Regression' from the number of available analysis tools. Then you will be
+prompted following screen:
+
+As shown on the above screenshot, you may want to click on the Confidence Level check box (default confidence level is 95%). 
+You may also want to select the 'New Worksheet' to display the output (otherwise your existing excel sheet may get messy). And 
+finally, you may want to select the Residuals and Standardized Residuals check boxes. And click on OK button.
+
+Excel will do it's magic and show you the summary of the analysis as follows:
+
+All the details that LINEST function provides you are summarized precisely on the Summary Sheet.
+
+
+
