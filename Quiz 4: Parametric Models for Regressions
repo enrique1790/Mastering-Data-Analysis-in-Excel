@@ -1,0 +1,47 @@
+### Mentor Hints for Week 4 Graded Quiz
+Please post your questions here, I will answer them and summarize them in the main body. Happy learning!
+
+Helpful Excel function
+NORMDIST (x, mu, sigma, cumulative)
+In NORMDIST, when the last argument is set to TRUE, NORMDIST returns the cumulative probability that the observed value of a Normal 
+random variable with mean mu and standard deviation sigma will be less than or equal to x. If cumulative is set to FALSE 
+(or 0, interpreted as FALSE), NORMDIST returns the height of the bell-shaped probability density curve. [Microsoft description]
+
+SQRT()
+Returns a positive square root.
+
+LOG(number, [base])
+Returns the logarithm of a number to the base you specify.
+
+LINEST(known_y's, known_x's, intercept, statistics)
+Perform linear regression. A least squares criterion is used, and LINEST tries to find the best fit under that criterion.
+[Microsoft description]
+
+The array's dimensions are five rows by a number of columns that is equal to the number of independent variables plus one if the 
+third argument is set to TRUE (if the third argument is not set to TRUE, the number of columns is equal to the number of independent 
+variables).
+
+Question 3
+
+Given
+Sigma(X)=15, Sigma(Y)=10
+
+Solve
+Sigma(Z)
+
+Calculations
+Sigma(Z) = Sigma(X+Y) = SQRT((Sigma(X))^2+(Sigma(Y))^2)
+
+Question 4
+Use the Markowitz Portfolio Optimization Spreadsheet, 5-4 to solve the problem.
+
+Question 6
+Standardization: (x - average)/std. deviation
+All other numbers can be found with Excel formula.
+
+Question 7
+R^2 = 1- (error)^2
+
+Question 8
+Error = sqrt(1 - R^2)
+Differential Entropy=-log_2(Error)
