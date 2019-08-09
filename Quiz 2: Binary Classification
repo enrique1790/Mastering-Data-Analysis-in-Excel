@@ -1,0 +1,91 @@
+To download the excel
+https://www.coursera.org/learn/analytics-excel/supplement/1gaaW/excel-workbook-for-binary-classification
+
+In smaller parts?
+https://drive.google.com/folderview?id=0B3h8S-NKph6RdDBaV21iYkE4R2s&usp=sharing
+
+Question 1 A test for “driving while intoxicated” was given 100 times. 20 people tested were actually intoxicated, and 10 people were 
+mis-classified as intoxicated. What would the false positive rate be?
+
+Given
+a + b = c + d = 100
+20 people tested were actually intoxicated => a = 20
+10 people were mis-classified as intoxicated => g = 10
+
+Find
+False positive rate = g/b
+
+Calculate
+
+1) "b" based on "a + b = 100"
+3) "False positive rate" based on False positive rate = g/b
+
+Question 2 If a fire alarm malfunctions and fails to go off when there actually is a fire, that is a:
+Alarm didn't go on --> Negative Classification
+Alarm goes on --> Positive Classification
+
+Question 3 If the “classification incidence/test incidence” is 10% and the true “condition incidence” is 12%, the true positive rate:
+
+Given
+c = 10%
+a = 12%
+
+Compare True Positive rate (e/a) with 100%
+Note: You don't have to calculate e, just think about whether e can be larger than a or not.
+
+Question 4 - 7
+
+To identify the threshold
+1) Look for the minimum cost number and identify the rows corresponds to the minimum cost. (Ctrl + F: minimum cost calculated)
+2) The optimal threshold level is the first number in the rows of minimum cost (highlight the identified rows and read the number in 
+the first column)
+
+Question 6 What is the lowest threshold value classified as “Positive” that achieves the optimal cost per test?
+The answer is corrected now. The correct answer must satisfy three criteria:
+
+1) Minimum cost
+2) Classified as "Positive"
+3) Lowest value
+
+Question 7 In general, increasing the cost per FN while keeping the cost per FP constant will cause the cost-minimizing threshold score
+to:
+Don't misinterpret "threshold score" to "cost", the question is asking how level of protein X37 is changing with the cost per FN. 
+Try to adjust the FN cost in the Excel and you will see the answer. The reason is simple: increasing cost per FN will move the 
+threshold towards less FN incidence. Then the quesiton becomes "which direction does the threshold move to reduce the number of FN? ".
+
+Question 8-10
+Make a copy of the Excel Bombers and Seagulls spreadsheet 3-1, 3-3A, 3-4 to answer Questions 8 to 10:Modify the spreadsheet data so 
+that there are 4 bombers instead of 3 – with the 4th bomber having score 66 – and 16 seagulls instead of 17.
+
+8. What is the new Area Under the Curve:
+
+9. What is the new minimum cost per event?
+
+10. What is the new threshold that minimizes the cost per event?
+
+Use tab "3-1,3-3A, 3-4 Bombers Seagulls" part 3 to calculate the FP and TP rate, then use part 1 under the same tab to get AUC value.
+
+Question 11 A population tested for “driving while intoxicated” has a Condition incidence of 20%. If the test has a true positive 
+rate of 70% and a false positive rate of 10%, what is the test’s Positive Predictive Value (PPV)?
+Please refer to the confusion matrix definition for this question, you won't need the following hint if you are able to do algebra.
+
+Given
+
+Condition incidence of 20% --> a = 0.2
+True positive rate of 70% --> e/a = 0.7
+False positive rate of 10% --> g/b = 0.1
+
+Find
+PPV = e/c
+
+Calculations
+calculate b, g, e and c using the following relations:
+a + b =1
+c = e + g
+PPV = e/c
+
+Question 12 In the example from the video of adding standardized heights and standardized weights, what is the False Positive rate 
+if we choose a threshold between -1.33 and -1.28?
+
+Refer to the Confusion Matrix definitions in Spreadsheet 3-2. You will see that the False Positive rate is simply the number of
+Condition "-" or "0" above the threshold, divided by the total number of Condition "-" or "0."
