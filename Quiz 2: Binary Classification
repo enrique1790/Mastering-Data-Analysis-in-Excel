@@ -47,6 +47,13 @@ The answer is corrected now. The correct answer must satisfy three criteria:
 2) Classified as "Positive"
 3) Lowest value
 
+Q4)
+Set Objective $L$4
+Value of 100
+By changing variable cells: $G$3
+Make Unconstrained variable non-negative: check
+Select a solving method: GRG Non Linear
+
 Question 7 In general, increasing the cost per FN while keeping the cost per FP constant will cause the cost-minimizing threshold score
 to:
 Don't misinterpret "threshold score" to "cost", the question is asking how level of protein X37 is changing with the cost per FN. 
@@ -88,3 +95,9 @@ if we choose a threshold between -1.33 and -1.28?
 
 Refer to the Confusion Matrix definitions in Spreadsheet 3-2. You will see that the False Positive rate is simply the number of
 Condition "-" or "0" above the threshold, divided by the total number of Condition "-" or "0."
+
+Commentary:
+I figured out what's up with Q12 on the graded week 2 quiz. You can find the "right" answer IF you realize 2 things:
+1. The threshold is not included in "above the threshold"
+AND
+2. There's a typo in the problem (which is replicated in the answer explanation). The threshold is 25, not 24.
