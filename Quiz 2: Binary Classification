@@ -58,6 +58,12 @@ Select a solving method: GRG Non Linear
 Answer: $12,262
 Link: https://www.coursera.org/learn/analytics-excel/discussions/weeks/2/threads/9jnL0sMhEeirTw7nbK3LWA
 
+Q5) 
+Set Columns:
+Cost per False Negative (FN) : $15,000 
+Cost per False Positive (FP) : $100 
+Cost per Event: $25.98
+
 Question 7 In general, increasing the cost per FN while keeping the cost per FP constant will cause the cost-minimizing threshold score
 to:
 Don't misinterpret "threshold score" to "cost", the question is asking how level of protein X37 is changing with the cost per FN. 
