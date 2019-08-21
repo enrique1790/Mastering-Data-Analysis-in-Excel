@@ -86,6 +86,7 @@ that there are 4 bombers instead of 3 – with the 4th bomber having score 66 �
 
 10. What is the new threshold that minimizes the cost per event?
 Use tab "3-1,3-3A, 3-4 Bombers Seagulls" part 3 to calculate the FP and TP rate, then use part 1 under the same tab to get AUC value.
+Answer: (Decreases it from 75 to 66.)
 
 Question 11 A population tested for “driving while intoxicated” has a Condition incidence of 20%. If the test has a true positive 
 rate of 70% and a false positive rate of 10%, what is the test’s Positive Predictive Value (PPV)?
