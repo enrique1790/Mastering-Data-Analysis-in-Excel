@@ -13,7 +13,7 @@ a + b = c + d = 100
 10 people were mis-classified as intoxicated => g = 10
 
 Find
-False positive rate = g/b
+False positive rate = g/b (12.5%)
 
 Calculate
 
@@ -23,6 +23,7 @@ Calculate
 Question 2 If a fire alarm malfunctions and fails to go off when there actually is a fire, that is a:
 Alarm didn't go on --> Negative Classification
 Alarm goes on --> Positive Classification
+Answer: False Negative
 
 Question 3 If the “classification incidence/test incidence” is 10% and the true “condition incidence” is 12%, the true positive rate:
 
