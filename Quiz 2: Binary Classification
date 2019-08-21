@@ -33,6 +33,7 @@ a = 12%
 
 Compare True Positive rate (e/a) with 100%
 Note: You don't have to calculate e, just think about whether e can be larger than a or not.
+Answer: cannot be 100%
 
 Question 4 - 7
 
@@ -54,6 +55,8 @@ Value of 100
 By changing variable cells: $G$3
 Make Unconstrained variable non-negative: check
 Select a solving method: GRG Non Linear
+Answer: $12,262
+Link: https://www.coursera.org/learn/analytics-excel/discussions/weeks/2/threads/9jnL0sMhEeirTw7nbK3LWA
 
 Question 7 In general, increasing the cost per FN while keeping the cost per FP constant will cause the cost-minimizing threshold score
 to:
