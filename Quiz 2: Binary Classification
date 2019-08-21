@@ -101,6 +101,8 @@ False positive rate of 10% --> g/b = 0.1
 Find
 PPV = e/c
 
+Answer: (0.64)
+
 Calculations
 calculate b, g, e and c using the following relations:
 a + b =1
@@ -109,7 +111,7 @@ PPV = e/c
 
 Question 12 In the example from the video of adding standardized heights and standardized weights, what is the False Positive rate 
 if we choose a threshold between -1.33 and -1.28?
-
+Answer: .67, .33
 Refer to the Confusion Matrix definitions in Spreadsheet 3-2. You will see that the False Positive rate is simply the number of
 Condition "-" or "0" above the threshold, divided by the total number of Condition "-" or "0."
 
@@ -118,3 +120,5 @@ I figured out what's up with Q12 on the graded week 2 quiz. You can find the "ri
 1. The threshold is not included in "above the threshold"
 AND
 2. There's a typo in the problem (which is replicated in the answer explanation). The threshold is 25, not 24.
+
+Link: https://www.coursera.org/learn/analytics-excel/discussions/weeks/2/threads/H7ETNYIDEea1EQ4e4zXu3w
