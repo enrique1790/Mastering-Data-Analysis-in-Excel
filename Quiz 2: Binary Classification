@@ -74,14 +74,15 @@ to:
 Don't misinterpret "threshold score" to "cost", the question is asking how level of protein X37 is changing with the cost per FN. 
 Try to adjust the FN cost in the Excel and you will see the answer. The reason is simple: increasing cost per FN will move the 
 threshold towards less FN incidence. Then the quesiton becomes "which direction does the threshold move to reduce the number of FN? ".
+Answer: Stay the Same
 
 Question 8-10
 Make a copy of the Excel Bombers and Seagulls spreadsheet 3-1, 3-3A, 3-4 to answer Questions 8 to 10:Modify the spreadsheet data so 
 that there are 4 bombers instead of 3 – with the 4th bomber having score 66 – and 16 seagulls instead of 17.
 
-8. What is the new Area Under the Curve:
+8. What is the new Area Under the Curve: (0.75)
 
-9. What is the new minimum cost per event?
+9. What is the new minimum cost per event? (Increases by 250,000 pounds)
 
 10. What is the new threshold that minimizes the cost per event?
 Use tab "3-1,3-3A, 3-4 Bombers Seagulls" part 3 to calculate the FP and TP rate, then use part 1 under the same tab to get AUC value.
