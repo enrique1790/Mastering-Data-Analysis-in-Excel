@@ -23,7 +23,7 @@ Calculate
 Question 2 If a fire alarm malfunctions and fails to go off when there actually is a fire, that is a:
 Alarm didn't go on --> Negative Classification
 Alarm goes on --> Positive Classification
-Answer: False Negative
+Answer: (False Negative)
 
 Question 3 If the “classification incidence/test incidence” is 10% and the true “condition incidence” is 12%, the true positive rate:
 
@@ -33,7 +33,7 @@ a = 12%
 
 Compare True Positive rate (e/a) with 100%
 Note: You don't have to calculate e, just think about whether e can be larger than a or not.
-Answer: cannot be 100%
+Answer: (cannot be 100%)
 
 Question 4 - 7
 
@@ -55,26 +55,26 @@ Value of 100
 By changing variable cells: $G$3
 Make Unconstrained variable non-negative: check
 Select a solving method: GRG Non Linear
-Answer: $12,262
+Answer: ($12,262)
 Link: https://www.coursera.org/learn/analytics-excel/discussions/weeks/2/threads/9jnL0sMhEeirTw7nbK3LWA
 
 Q5) 
 Set Columns:
 Cost per False Negative (FN) : $15,000 
 Cost per False Positive (FP) : $100 
-Cost per Event: $25.98
+Cost per Event: ($25.98)
 
 Q6)
 Cost per False Negative (FN) : $7,500
 Cost per False Positive (FP) : $50 
-Answer: The minimum Cost per Test ($12.99 vs $25.98)
+Answer: The minimum Cost per Test ($12.99 vs $25.98) or (The minimum Cost per Test)
 
 Question 7 In general, increasing the cost per FN while keeping the cost per FP constant will cause the cost-minimizing threshold score
 to:
 Don't misinterpret "threshold score" to "cost", the question is asking how level of protein X37 is changing with the cost per FN. 
 Try to adjust the FN cost in the Excel and you will see the answer. The reason is simple: increasing cost per FN will move the 
 threshold towards less FN incidence. Then the quesiton becomes "which direction does the threshold move to reduce the number of FN? ".
-Answer: Stay the Same
+Answer: (decrease)
 
 Question 8-10
 Make a copy of the Excel Bombers and Seagulls spreadsheet 3-1, 3-3A, 3-4 to answer Questions 8 to 10:Modify the spreadsheet data so 
@@ -111,7 +111,7 @@ PPV = e/c
 
 Question 12 In the example from the video of adding standardized heights and standardized weights, what is the False Positive rate 
 if we choose a threshold between -1.33 and -1.28?
-Answer: .67, .33
+Answer: (.67, .33)
 Refer to the Confusion Matrix definitions in Spreadsheet 3-2. You will see that the False Positive rate is simply the number of
 Condition "-" or "0" above the threshold, divided by the total number of Condition "-" or "0."
 
