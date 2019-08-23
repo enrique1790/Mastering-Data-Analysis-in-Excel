@@ -109,6 +109,13 @@ a + b =1
 c = e + g
 PPV = e/c
 
+Math
+.20 + b = 1 ; b = 1-.20 ; b= .80
+e = [e/.20](.20) = .70 (.20) ; e =.14
+g = [g/.80](.80) = 0.1 (.80); g = .08
+c = .14 + .08 = .22
+PPV = .14/.22 ; PPV = .636 or .64 rounded up 
+
 Question 12 In the example from the video of adding standardized heights and standardized weights, what is the False Positive rate 
 if we choose a threshold between -1.33 and -1.28?
 Answer: (.67, .33)
