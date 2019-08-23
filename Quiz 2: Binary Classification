@@ -122,11 +122,11 @@ Answer: (.67, .33)
 Refer to the Confusion Matrix definitions in Spreadsheet 3-2. You will see that the False Positive rate is simply the number of
 Condition "-" or "0" above the threshold, divided by the total number of Condition "-" or "0."
 
-Commentary:
-I figured out what's up with Q12 on the graded week 2 quiz. You can find the "right" answer IF you realize 2 things:
-1. The threshold is not included in "above the threshold"
-AND
-2. There's a typo in the problem (which is replicated in the answer explanation). The threshold is 25, not 24.
+Steps:
+Please download data from resources for solder performance. 
+Sort the table in I2 :M13 based on age ( high to low) , select the Expand option when it is prompted.
+When you fix threshold at 24, you will get 4 zeros and two ones . 
+From this you can obtain x, y coordinates ( ie 4/6, 2/6).
 
 Link: https://www.coursera.org/learn/analytics-excel/discussions/weeks/2/threads/H7ETNYIDEea1EQ4e4zXu3w
 https://www.coursera.org/learn/analytics-excel/discussions/weeks/2/threads/QD-dk5HSEeefMg4iLVonpg
