@@ -9,6 +9,8 @@ p(tails). Which coin has a larger entropy prior to observing the outcome?
 Less is known about the result of fair coin and thus it has higher entropy. In other words, we know more about the unfair coin since it
 favors one direction than the other, therefore unfair coin has lower entropy.
 
+Comment: The coin that is harder to predict is the one with the greater entropy.
+
 Question 2
 1. It is a 6-sided fair dice, which means the probability for getting each of the 6 different outcome is 1/6.
 2. Given a probability, the entropy that that probability is p*log2(1/p). Hence, the entropy for each of the 6 different outcome is 
@@ -46,8 +48,21 @@ Calculation
 3) e using the following equation
 H(X,Y)	= e*log(1/e)	+ f*log(1/f)	+ g*Log(1/g)	+ h*log(1/h)
 
-Question 6: Given a = 0.2, c = 0.5 on the Information Gain Calculator Spreadsheet suppose now we also know the true positive rate is 0.18. What is
-the Mutual Information?
+Comment:
+H(X,Y)=H(X)+H(Y) implies that two events are independent. In that case, the joint probability of these two events is P(X)*P(Y).
+Putting everything in the context of the Confusion Matrix, X is the conditions (+ or -), Y is the classifications (Positive or Negative)
+, e takes the place of True Positive. The "joint probability e" is the joint probability of Condition + and Classification Positive. 
+Since these two events are independent, the joint probability is the product of the probability of "+" and probability of Positive.
+The probability of Condition + is given by a. The probability of Classification Positive is given by c. Hence, a*c=0.2*0.3=0.06.
+
+Question 6: Given a = 0.2, c = 0.5 on the Information Gain Calculator Spreadsheet suppose now we also know the true positive rate is 
+0.18. What is the Mutual Information?
+
+Answer: .08
+Comments:
+I'm working on Q6. According to the question,the true positive rate is 0.18. That is to say e/a=0.18 and e= 0.036. However, 
+according to the automatically calculated result, the mutual information is 0.0788. And it's not even an option. May you help me figure
+out where I went wrong? thank you.
 
 Question 7-8: Monty Hall Problem Consider the Monty Hall problem, but instead of the usual 4 doors, assume there are 5 doors to choose
 from. You first choose door #1. Monty opens doors #2 and #3. What is the new probability that there is a prize behind door #4?
@@ -62,7 +77,21 @@ We have three situations for doors:
 
 For 1), probability of prize is constant because Monty's behavior does not change the prize behind the door you choose. P1 = a/(a+ b+ c)
 For 2), P = zero because Monty shows you there is no prize behind the door. P2 = 0
-For 3), the probability of prize increased because Monty can't choose the doors with prizes. The original probability that the prize is behind doors not chosen is constant and equal to 1 - P1 = (b+c)/(a+b+c). But now, b is out of the equation, so P3 = c/(a+c)
+For 3), the probability of prize increased because Monty can't choose the doors with prizes. The original probability that the prize 
+is behind doors not chosen is constant and equal to 1 - P1 = (b+c)/(a+b+c). But now, b is out of the equation, so P3 = c/(a+c)
+
+Q7) The original Monty Hall problem has three doors. There are a lot of variations, i.e., there are 4 doors and 2 of the doors have 
+prizes hidden behind them.
+
+What is the new probability that there is a prize behind door #4?
+
+*There are 5 doors in total. Before Monty opens any door, the probability that the prize could be hidden behind any door is 1/5.
+That means the probability that the contestant will miss the prize is 1-1/5 = 4/5
+*The contestant opens door#1. There is 1/5 chance that the prize is behind door #1 and 4/5 chance that the prize is behind door#2, 
+door#3, door#4, door#5.
+*Monty opens doors #2 and #3, revealing that these two doors are non-winning. After that, the 4/5 falls on the doors that the 
+contestant did not choose and Monty did not open: doors #4 and #5. There is an equal chance that the prize could be behind #4 or #5. 
+Hence, the "the new probability that there is a prize behind door #4" is (4/5)*(1/2) = 2/5 or 0.4
 
 Question 9: Learn from One Coin Toss
 
