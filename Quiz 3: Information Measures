@@ -9,6 +9,22 @@ p(tails). Which coin has a larger entropy prior to observing the outcome?
 Less is known about the result of fair coin and thus it has higher entropy. In other words, we know more about the unfair coin since it
 favors one direction than the other, therefore unfair coin has lower entropy.
 
+Question 2
+1. It is a 6-sided fair dice, which means the probability for getting each of the 6 different outcome is 1/6.
+2. Given a probability, the entropy that that probability is p*log2(1/p). Hence, the entropy for each of the 6 different outcome is 
+(using Excel) =(1/6)*LOG(1/6,2) = 0.430827083.
+3. What we are interested in is H(X), the entropy of all possible outcomes. To get H(X), multiply the above answer by 6,
+0.430827083*6 = 2.584962501 ~ 2.58
+A simple three-step problem
+
+Question 3 
+If your friend picks one number between 1001 to 5000, under the strategy used in video Entropy of a Guessing Game, what is the 
+maximum number of questions you need to ask to find out that number?
+
+Question 4
+Use the “Information Gain Calculator” spreadsheet to calculate the "Conditional Entropy" H(X|Y) given a = 0.4, c = 0.5, e = 0.11.
+
+
 Question 5 On the “Information Measures” spreadsheet 4-1, given a = 0.3, c = 0.2, suppose now we also know that H(X,Y) = H(X) + H(Y). 
 What is the joint probability e?
 
@@ -21,7 +37,7 @@ a = 0.3
 c = 0.2
 
 Solve
-e
+e = 0.3 * 0.2 ; e = .06
 
 Calculation
 
@@ -29,6 +45,9 @@ Calculation
 2) H(X), H(Y), and H(X,Y)
 3) e using the following equation
 H(X,Y)	= e*log(1/e)	+ f*log(1/f)	+ g*Log(1/g)	+ h*log(1/h)
+
+Question 6: Given a = 0.2, c = 0.5 on the Information Gain Calculator Spreadsheet suppose now we also know the true positive rate is 0.18. What is
+the Mutual Information?
 
 Question 7-8: Monty Hall Problem Consider the Monty Hall problem, but instead of the usual 4 doors, assume there are 5 doors to choose
 from. You first choose door #1. Monty opens doors #2 and #3. What is the new probability that there is a prize behind door #4?
