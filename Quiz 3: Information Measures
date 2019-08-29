@@ -140,3 +140,58 @@ P(fair | 3) = P(3 | fair) * P(fair) / P(3)
 Other Hints
 Hints are given as comments for your answer, you will see them after submitting.
 Let me know if you have further questions here.
+
+Q8) in its original words: "How many bits of information are communicated to you by Monty when you observe which two doors he opens?" 
+The problem is essentially asking: how much uncertainty Monty eliminated by opening two doors?
+
+The amount of uncertainty eliminated equals to the amount uncertainty before any door is open subtract the amount of uncertainty after 
+2 doors are open. We denote uncertainty by entropy. For example, the uncertainty before any door is open is denoted by H(X). The 
+uncertainty after 2 doors are open is denoted by H(X|Y). The question thus boils down to H(X)-H(X|Y) = ?
+
+That is the overall idea, but how do we calculate H(X)? Please remember that H(X) is the total uncertainty before any door is open. 
+Each of the 5 doors has an equal chance of 1/5 that the prize could be hidden behind it.
+H(X)=5*H(1/5)=5*(1/5)*LOG2(1/(1/5)) =5*(1/5)*LOG2(5/1)
+
+The expression evaluates to 2.32
+
+H(X|Y)=H(1/5, 2/5). The remaining uncertainty after Monty open two doors. (1/5)*LOG2(1/(1/5))+2*(2/5)*LOG2(1/(2/5)) 
+= (1/5)*LOG2(5/1)+2*(2/5)*LOG2(5/2)
+
+Please notice that there is a multiplier of 2 to the second part of the expression. That's because after Monty opens 2 doors, 
+there are 3 doors remaining open, each with winning probability of 1/5, 2/5, 2/5 (two doors with 2/5 chance of winning). This 
+expression evaluates to 1.52.
+
+Hence, the final answer is 5*H(1/5) - 2*H(1/5,2/5) = 2.32-1.52 = (0.8.)
+
+Q9) Known: P(Head|B) = 0.5, P(Head|~B) = 0.4, P( ~B) = 0.7, P(B) = 1-0.7=0.3 (The friend always use the crooked coin 70% of the time. 
+That means he always uses the fair coin 1-0.7=0.3 of the time.)
+
+Want: P(B|Head) A head was observed. The problem asks for the "new best estimate of the probability that the coin he just tossed is
+fair". This is asking: what is the probability that the coin is fair, given that a head is observed? This is P(B|Head)
+
+The formula for P(B|Head) is P(B|Head) = P(Head|B)*P(B)/P(Head) . We know both P(Head|B) and P(B), but need to find out P(Head) 
+(the probability that a head would be observed).
+
+P(Head)=P(Head|B)*P(B)+P(Head|~B)*P(~B) = 0.5*0.3+0.4*0.7=0.43
+
+P(B|Head) = 0.5*0.3/0.43 = ( 0.35 )
+
+Answer:
+Comments:
+Q10 is very similar to Q9. You will need to apply Bayes' Rule and the Law of Total Probability again. (Please refer to my last post 
+for how Bayes' Rule and the Law of Total Probability are applicable.)
+
+Known: P(3|B) = 1/6, P(3|~B) = 1/3. A 3 is observed. P(B)=0.5 (To get this, you need to think a little bit. The question states 
+"You have no basis for considering either dice more likely before you roll it and observe an outcome." This sentence means that
+there is an equal probability that you will get either a fair coin or crooked coin. Hence, P(B)=P(~B)=0.5)
+
+Wanted: P(B|3) The problem asks "What is the new probability that the die you rolled is fair?" This is asking what is the probability
+of tossing a fair coin, given that a 3 is observed, namely, what is P(B|3)
+
+Applying Bayes' Rule, the formula for P(B|3) is P(B|3)=P(3|B)*P(B)/P(3)
+
+P(3|B) and P(B) are both known. Apply Law of Total Probability to P(3).
+
+P(3) = P(3|B)*P(B)+P(3|~B)*P(~B) = (1/6)*0.5+(1/3)*0.5=0.25
+
+Substitute P(3)=0.25 into the formula for P(B|3): (1/6)*0.5/0.25 = 0.33
