@@ -61,8 +61,12 @@ Question 6: Given a = 0.2, c = 0.5 on the Information Gain Calculator Spreadshee
 Answer: .08
 Comments:
 I'm working on Q6. According to the question,the true positive rate is 0.18. That is to say e/a=0.18 and e= 0.036. However, 
-according to the automatically calculated result, the mutual information is 0.0788. And it's not even an option. May you help me figure
-out where I went wrong? thank you.
+according to the automatically calculated result, the mutual information is 0.0788. And it's not even an option. May you help me 
+figure out where I went wrong? thank you.
+
+--> I'm working on this question also. I've followed the same process as Wang; e/a=0.18 and e= 0.036. The automatically calculated
+result  of H(X) - H(X|Y) = I(X,Y) =0.7219 - 0.6431=0.0788. As Wang pointed out, that is not an option on the quiz question. Wang 
+indicated  this is a silly question, but I am not seeing the mistake. Can you point me in the correct direction?
 
 Question 7-8: Monty Hall Problem Consider the Monty Hall problem, but instead of the usual 4 doors, assume there are 5 doors to choose
 from. You first choose door #1. Monty opens doors #2 and #3. What is the new probability that there is a prize behind door #4?
