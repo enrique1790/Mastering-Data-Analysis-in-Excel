@@ -55,6 +55,8 @@ Putting everything in the context of the Confusion Matrix, X is the conditions (
 Since these two events are independent, the joint probability is the product of the probability of "+" and probability of Positive.
 The probability of Condition + is given by a. The probability of Classification Positive is given by c. Hence, a*c=0.2*0.3=0.06.
 
+Link: https://www.coursera.org/learn/analytics-excel/discussions/weeks/3/threads/_iB0l1s6EeeqKBJHVk6djA
+
 Question 6: Given a = 0.2, c = 0.5 on the Information Gain Calculator Spreadsheet suppose now we also know the true positive rate is 
 0.18. What is the Mutual Information?
 
