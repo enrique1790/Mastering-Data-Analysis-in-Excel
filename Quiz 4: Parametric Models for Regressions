@@ -127,6 +127,14 @@ Question 8
 Error = sqrt(1 - R^2)
 Differential Entropy=-log_2(Error)
 
+An automobile parts manufacturer uses a linear regression model to forecast the dollar value of the next years’ orders from current 
+customers as a function of a weighted sum of their past-years’ orders. The model error is assumed Gaussian with standard deviation 
+of $130,000.
+To the nearest dollar, what is the range above and below each Point Forecast required to have 90% confidence that the dollar 
+value of next years’ orders will fall within that range?
+Hint: you can answer this question by making small modifications to the Correlation and Model Error Spreadsheet.
+
+
 Q9: 
 LINEST Function can be automatically calculated using 'Analysis Toolpack' excel Add-In. Once this add is loaded into the excel, you may
 want to click on Data --> Data Analysis and select 'Regression' from the number of available analysis tools. Then you will be
@@ -137,8 +145,20 @@ You may also want to select the 'New Worksheet' to display the output (otherwise
 finally, you may want to select the Residuals and Standardized Residuals check boxes. And click on OK button.
 
 Excel will do it's magic and show you the summary of the analysis as follows:
-
 All the details that LINEST function provides you are summarized precisely on the Summary Sheet.
 
+#An automobile parts manufacturer uses a linear regression model to forecast the dollar value of the next years’ orders from current 
+customers as a function of a weighted sum of their past-years’ orders. The model error is assumed Gaussian with standard deviation of 
+$130,000.
+
+If the correlation is R = .33, and the point forecast orders $5.1 million, what is the probability that the customer will order more 
+than $5.3 million?
+Hint: Use the Typical Problem with NormSDist Spreadsheet.
+
+Question 10
+
+Question 11
+
+Question 12
 
 
