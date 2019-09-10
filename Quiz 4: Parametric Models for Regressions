@@ -155,10 +155,32 @@ If the correlation is R = .33, and the point forecast orders $5.1 million, what 
 than $5.3 million?
 Hint: Use the Typical Problem with NormSDist Spreadsheet.
 
-Question 10
+# Question 10
+An automobile parts manufacturer uses a linear regression model to forecast the dollar value of the next years’ orders from current 
+customers as a function of a weighted sum of that customer’s past-years orders. The linear correlation is R = .33.
 
-Question 11
+After standardizing the x and y data, what portion of the uncertainty about a customer’s order size is eliminated by their historical
+data combined with the model?
 
-Question 12
+Hint: Use the Correlation and P.I.G. Spreadsheet.
+
+# Question 11
+A restaurant offers different dinner “specials” each weeknight. The mean cash register receipt per table on Wednesdays is $75.25 with 
+standard deviation of $13.50. The restaurant experiments one Wednesday with changing the “special” from blue fish to lobster. The 
+average amount spent by 85 customers is $77.20.
+
+How probable is it that Wednesday receipts are better than average by chance alone?
+
+Hint: Use the Typical Problem with NormSDist Spreadsheet.
+
+# Question 12
+Your company currently has no way to predict how long visitors will spend on the Company’s web site. All it known is the average time
+spent is 55 seconds, with an approximately Gaussian distribution and standard deviation of 9 seconds. It would be possible, after 
+investing some time and money in analytics tools, to gather and analyzing information about visitors and build a linear predictive
+model with a standard deviation of model error of 4 seconds.
+
+How much would the P.I. G. of that model be?
+
+Hint: Use the Correlation and P.I.G. Spreadsheet
 
 
