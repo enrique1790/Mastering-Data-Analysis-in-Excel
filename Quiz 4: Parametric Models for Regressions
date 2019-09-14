@@ -73,12 +73,11 @@ Sigma(Z) = Sigma(X+Y) = SQRT((Sigma(X))^2+(Sigma(Y))^2)
 Answer: .0173%
 
 Comment:
-"If X and Y are random, and X's mean = 10, variance = 3, and Standard Deviation = 1.732050, how can I calculate Y's variance if y=2x+3.
-I have been cheking the formulas and I don't find the solution."
-The variance of y is 12. When you stretch a Gaussian distribution with a constant, the variance is magnified by the square of the 
-constant. Y=2x+3. The constant is 2. Hence, the original variance is magnified by a factor of 2^2=4. 4*3=12. This is Q3 of the first 
-practice quiz
+Can somebody help me understand why we calculate with positive z-score ( 1 –NormSDist(3.577)) while z-score of the sample average of 
+112 is (112-120)/2.236 = -3.577 is negative? Wouldn't make more sense (and shorter) just take NormSDist of actual negative z-score: 
+=NormSDist(-3.577))? Is my understanding of the area we are looking for correct on the attached diagram? Thanks in advance
 
+You are correct . You will get correct answer if you calculate NORMSDIST (- 3.5777).
 Link: https://www.coursera.org/learn/analytics-excel/discussions/weeks/4/threads/mSjEkPW5Eee2ig5-ZYBNUA
 
 Question 4
