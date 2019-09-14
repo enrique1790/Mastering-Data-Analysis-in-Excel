@@ -17,6 +17,10 @@ z-score for the upper-bound of the 95% confidence interval is the area to the le
 
 link: https://www.coursera.org/learn/analytics-excel/discussions/weeks/4/threads/BnmIZIWGEeirLQoGavMecg
 
+Comments:
+In the CLT and Excel Rand Spreadsheet, use cell C2 for a = 89 and cell E2 for b = 129. The formula for the standard deviation of a
+uniform distribution is given in cell N3.
+
 ### Mentor Hints for Week 4 Graded Quiz (12 Questions)
 Please post your questions here, I will answer them and summarize them in the main body. Happy learning!
 
@@ -81,51 +85,26 @@ notations: Exxon = Φ(10%, 0.04), Tesla = Φ(15%, 0.09) . For the notation Φ(a,
 Exxon has a mean of 0.1 and variance of 0.04, Tesla has a mean of 0.15 and variance of 0.09. The standard deviation is square root 
 of the variance
 
+Comment:
+Covariance is defined as R*Std.Dev(1)*Std.Dev(2).
+
 Q5:
 The correlation is not equal to the sum of the products of the z-scores. After you have computed the z-scores for each data point, 
 use the CORREL function. The CORREL function takes two arguments, array1, array2. array1 is all z-scores for the X data set, array2 
 is the z-scores for the Y data set.
 Tip: To calculate the Z-score, instead of using the formula (xi-mean)/sigma, you can use Excel's STANDARDIZE function.
 
+Comments:
+
+
 Question 6
 Standardization: (x - average)/std. deviation
 All other numbers can be found with Excel formula.
 
 Comments:
-Alpha is the y-intercept of the best fit line. It is not explained in great details in the lecture video, but it can be easily computed
-if the slope and one point on the line is known. Or, if you have two sets of data points, plot a trend-line and Excel will display 
-the equation of the linear model in the form y=beta*x+alpha.
-
-For standardized data, alpha is 0 and the linear model becomes y=beta*x. The video mentioned it briefly. But you can experiment that 
-yourself. If you have two sets of data, standardize them, then plot the z-scores on a XY-plane, the trend-line (or the best fit line)
-runs through the origin.
-
-Beta is the slope of the best fit line. No further explanation is needed.
-
-R is the correlation coefficient. Usually, the correlation coefficient is given by Covariance(X,Y) / sigma(x)*sigma(y). Sigma is the 
-standard deviation. However, for standardized data, R=Covariance=Beta. The instructor briefly mentioned the proof. I worked out the 
-somewhat complicated details and present them below for those who are interested.
-
-Standardized values are the z-scores. Covariance of standized values is Division by n, since this is a population covariance. 
-For z-scores are standardized data, µx = 0 = µy . The above formula is reduced to
-
-The correlation coefficient of the z-scores is therefore
-
-Since the data points are standardized values, δ_𝑧𝑥 =1=δ_𝑧𝑦The correlation coefficient formula thus is reduced back to the covariance
-formula. Hence, for standardized values, covariance=R
-To prove the equality with beta, the mean squared errors of a best fit line is
-
-Consider β as an unknow variable and differentiate the above function.This involes using the power rule and chain rule of 
-differentiation. I will ommit the details here, since this is not a calculus class. After applying first the power rule, then
-the chain rule, then simplification, the derivative is
-
-Set the derivative to 0 and solve for β.
-
-Taking into consideration that the data are standardized and the standard deviation of standard normal distribution is 1
-Substitute this observation back to the expression for β and put the summation sign back
-
-This is exactly the formula for covariance for the standardized values.Hence, we prove that for standardized values 
-(the z-scores), β=R=Covariance
+Use the Markowitz Portfolio Optimization Spreadsheet. Enter Oil Expected return in Cell C6, Oil standard deviation in cell C7, 
+IT expected return in Cell D6, IT standard deviation in Cell D7, Oil weighting in Cell C9 and IT weighting in Cell D9. Results in
+Cell E12.
 
 Link: https://www.coursera.org/learn/analytics-excel/discussions/weeks/4/threads/9hxZVcMhEeiERhLphT2-QA?page=2
 
@@ -156,6 +135,11 @@ To the nearest dollar, what is the range above and below each Point Forecast req
 value of next years’ orders will fall within that range?
 Hint: you can answer this question by making small modifications to the Correlation and Model Error Spreadsheet.
 
+Comments:
+A 90% confidence interval means 5% above and 5% below the interval. Using p = .95, Excel "Normsinv(.95)" = 1.64485. 
+This is the z-Score. Therefore the interval ranges from (1.64485)*($130,00) or $213,831 below the point forecast, to 
+(1.64485)*($130,000) = $213,831 above the forecast.
+
 
 Q9: 
 LINEST Function can be automatically calculated using 'Analysis Toolpack' excel Add-In. Once this add is loaded into the excel, you may
@@ -177,6 +161,11 @@ If the correlation is R = .33, and the point forecast orders $5.1 million, what 
 than $5.3 million?
 Hint: Use the Typical Problem with NormSDist Spreadsheet.
 
+Comments:
+Convert $5.3 million to a z-score. The z-Score is (5.3-5.1)/.13 = (.2/.13) = 1.538.
+Input the z-score in the Excel formula (1 - Normsdist(z)) to get the probability of a score at least that high. 
+The probability is 1- 93.8% = 6.2%.
+
 # Question 10
 An automobile parts manufacturer uses a linear regression model to forecast the dollar value of the next years’ orders from current 
 customers as a function of a weighted sum of that customer’s past-years orders. The linear correlation is R = .33.
@@ -193,9 +182,16 @@ standard deviation of $13.50. The restaurant experiments one Wednesday with chan
 average amount spent by 85 customers is $77.20.
 
 How probable is it that Wednesday receipts are better than average by chance alone?
-
 Hint: Use the Typical Problem with NormSDist Spreadsheet.
-Link: https://www.coursera.org/learn/analytics-excel/discussions/weeks/4/threads/oyWTgopZEeaHRwr5_eYMew
+
+Link: 
+https://www.coursera.org/learn/analytics-excel/discussions/weeks/4/threads/oyWTgopZEeaHRwr5_eYMew
+
+Comments:
+The Z-score for Wednesdays is (77.20 – 75.25)/ 13.50/(sqrt(85) = 1.33. The probability that this much improvement would be due to 
+chance alone, not the change of special, is (1 - NormSDist(1.33)).
+Note that due to the Central Limit Theorem, even though the receipts may not have a Gaussian distribution, the sample means will
+have a Gaussian distribution so that use of the NormSDist function is appropriate.
 
 # Question 12
 Your company currently has no way to predict how long visitors will spend on the Company’s web site. All it known is the average time
@@ -203,9 +199,14 @@ spent is 55 seconds, with an approximately Gaussian distribution and standard de
 investing some time and money in analytics tools, to gather and analyzing information about visitors and build a linear predictive
 model with a standard deviation of model error of 4 seconds.
 
-How much would the P.I. G. of that model be?
-
+How much would the P.I. G. of that model be? 
 Hint: Use the Correlation and P.I.G. Spreadsheet
 
-link: https://www.coursera.org/learn/analytics-excel/discussions/weeks/4/threads/KZSnK_yAEeaT0Qr5Ew1QIA
+link: 
+https://www.coursera.org/learn/analytics-excel/discussions/weeks/4/threads/KZSnK_yAEeaT0Qr5Ew1QIA
 https://www.coursera.org/learn/analytics-excel/discussions/weeks/4/threads/a6f1cf3vEeea5g61AFAY_A
+
+Comments:
+With no model, the correlation R = 0 and the “model error” is equal to the standard deviation of Y = 9 seconds. Standardized, 
+the model error when R = 0 is equal to 1. Reducing the model error to 4 seconds is equivalent to reducing the standardized model 
+error to 4/9 = .4444 Since Sqrt(1-R^2) = .4444, R^2 = 1- .4444^2 = .8958.
