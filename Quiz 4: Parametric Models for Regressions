@@ -70,7 +70,7 @@ Sigma(Z)
 Calculations
 Sigma(Z) = Sigma(X+Y) = SQRT((Sigma(X))^2+(Sigma(Y))^2)
 
-Answer: 
+Answer: .0173%
 
 Comment:
 "If X and Y are random, and X's mean = 10, variance = 3, and Standard Deviation = 1.732050, how can I calculate Y's variance if y=2x+3.
