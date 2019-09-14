@@ -1,21 +1,37 @@
-Q1:Getting a z-score of 1.25 by (180-155)/20 is the first step. Use Excel's NORMSDIST function to find the percentage of athletes that 
-weigh less than or equal to 180 pounds, =NORMSDIST((180-155)/20) . Subtract the result from 1 and you have the percentage of athletes 
-thatweight more than 180 pounds.
+Q1:
+A manufacturer has developed a specialized metal alloy for use in jet engines. In its pure form, the alloy starts to soften at 1500 F. 
+However, small amounts of impurities in production cause the actual temperature at which the alloy starts to lose strength to vary
+around that mean, in a Gaussian distribution with standard deviation = 10.5 degrees F.
 
-Q2:"What upper bound for y will ensure that 95% of all possible outcomes for y will be below it?"
-This is Practice 2 (Regression Model and PIG) Question 5.
-The answer given by Coursera is =0.7+NORMSINV(0.95)*0.71 evaluates to 1.87.
+If the manufacturer wants to ensure that no more than 1 in 10,000 of its commercial products will suffer from softening, what 
+should it set as the maximum temperature to which the alloy can be exposed?
+Hint: Refer to the Excel NormSFunctions Spreadsheet.
 
-However, I think the correct question to this question is 2.09, not the 1.87 suggested in the explanation. The difference is 
-caused by the argument for the NORMSINV function.
+Answer: 1539.0497
 
-=0.7+NORMSINV(0.95)*0.71 evaluates to 1.87 (coursera answer) =0.7+NORMSINV(0.5+0.95/2)*0.71 evaluates to 2.09.
+Comments:
+I did not encounter that question when I was taking the course, so would try my best to explain based on my current understandings.
+If you are more comfortable with the statistical words, like significance level, then it might be understood this way:
 
-The argument for the NORMSINV function should have been 0.5+0.95/2, not 0.95 as suggested in the explanation. The NORMSINV function 
-returns the z-score such that NORM.S.DIST(z)=probability. In the context of the normal bell-shaped curve, the probability of the
-z-score for the upper-bound of the 95% confidence interval is the area to the left of the upper bound, which equals to 0.5+0.95/2.
+Mean is 1500, standard deviation is 10.5, and significance level (alpha) is 1/10000 = 0.0001 = 0.01%
+
+And because the alloy only softens at a higher temperature, but not a lower one, it is a one-tail problem. Then the temperature
+threshold should be something where 0.01% of the cases are on the right of the threshold. Hope this helps, and happy to discuss further.
+Best, Jane
+
+Link:
+https://www.coursera.org/learn/analytics-excel/discussions/weeks/4/threads/1BdETcMEEei_SAo-KdCgEA
+
+Q2:
+A carefully machined wire comes off an assembly line within a certain tolerance. Its target diameter is 100 microns, and the wires
+produced have a uniform distribution of diameters, between -11 microns and +29 microns from the target.
+
+What is the mean and standard deviation of the uniform distribution of wire diameters?
+Hint: Use the CLT and Excel Rand() Spreadsheet.
 
 link: https://www.coursera.org/learn/analytics-excel/discussions/weeks/4/threads/BnmIZIWGEeirLQoGavMecg
+
+Answer: Mean = 109 microns, Standard Deviation = 11.547 microns.
 
 Comments:
 In the CLT and Excel Rand Spreadsheet, use cell C2 for a = 89 and cell E2 for b = 129. The formula for the standard deviation of a
@@ -45,7 +61,6 @@ third argument is set to TRUE (if the third argument is not set to TRUE, the num
 variables).
 
 Question 3
-
 Given
 Sigma(X)=15, Sigma(Y)=10
 
@@ -54,6 +69,8 @@ Sigma(Z)
 
 Calculations
 Sigma(Z) = Sigma(X+Y) = SQRT((Sigma(X))^2+(Sigma(Y))^2)
+
+Answer: 
 
 Comment:
 "If X and Y are random, and X's mean = 10, variance = 3, and Standard Deviation = 1.732050, how can I calculate Y's variance if y=2x+3.
@@ -85,8 +102,13 @@ notations: Exxon = Φ(10%, 0.04), Tesla = Φ(15%, 0.09) . For the notation Φ(a,
 Exxon has a mean of 0.1 and variance of 0.04, Tesla has a mean of 0.15 and variance of 0.09. The standard deviation is square root 
 of the variance
 
+Answer: -.00715
+
 Comment:
 Covariance is defined as R*Std.Dev(1)*Std.Dev(2).
+
+Link:
+https://www.coursera.org/learn/analytics-excel/discussions/weeks/4/threads/vtQIDocvEemVYBLXU8593g
 
 Q5:
 The correlation is not equal to the sum of the products of the z-scores. After you have computed the z-scores for each data point, 
@@ -94,8 +116,11 @@ use the CORREL function. The CORREL function takes two arguments, array1, array2
 is the z-scores for the Y data set.
 Tip: To calculate the Z-score, instead of using the formula (xi-mean)/sigma, you can use Excel's STANDARDIZE function.
 
-Comments:
+Answer: -.22
 
+Comments:
+Standardization changes covariance to equal correlation. Standardization leaves correlation unchanged. See the Standardization 
+Spreadsheet.
 
 Question 6
 Standardization: (x - average)/std. deviation
