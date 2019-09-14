@@ -81,25 +81,14 @@ You are correct . You will get correct answer if you calculate NORMSDIST (- 3.57
 Link: https://www.coursera.org/learn/analytics-excel/discussions/weeks/4/threads/mSjEkPW5Eee2ig5-ZYBNUA
 
 Question 4
-Use the Markowitz Portfolio Optimization Spreadsheet, 5-4 to solve the problem.
-The standard deviation is 20.39%. You can obtain the standard deviation of the portfolio in two ways:
+Two stocks have the following expected annual returns:
 
-1) Download the Algebra with Gaussian workbook. Enter 0.1 into cell C22, 0.04 into cell E22, 0.03 into F22, 0.65 int G22, 0.15 int C24,
-0.09 into E24, 0.35 into G24. The expected return of the portfolio is then calculated in cell C26 and the standard deviation is 
-calculated in cell D26.
+Oil stock – expected return = 9% with standard deviation = 13%
+IT stock – expected return = 14% with standard deviation = 25%
+The Stocks prices have a small negative correlation: R = -.22.
 
-2) You can also calculated the expected return and standard deviation using these two formulas: Expected return = w1µ1+w2µ2 = 
-0.65*0.1+0.35*0.15 = 0.1175 or 11.75% Variance = w12* δ12+w22*δ22+2*w1*w2*covariance = (0.65)2*0.04+(0.35)2*0.09+2*0.65*0.35*0.03 = 
-0.041575. To get the standard deviation, take the square root of the variance, √(0.041575) = 0.203899485 or 20.39%.
-
-Doing it by hand gives you a better understanding of the concepts ad in fact, that's how they build the Excel worksheet: by applying 
-the two formulas demonstrated in the second approach. They were trying to make things so basic that even dummies would have no problems
-doing and built that worksheet.
-
-In case you wonder where I got the means and variances (or standard deviations) of the two stocks, you want to understand the 
-notations: Exxon = Φ(10%, 0.04), Tesla = Φ(15%, 0.09) . For the notation Φ(a, b), a is the mean, b is the variance. Hence, 
-Exxon has a mean of 0.1 and variance of 0.04, Tesla has a mean of 0.15 and variance of 0.09. The standard deviation is square root 
-of the variance
+What is the Covariance of the two stocks?
+Hint: Use the Algebra with Gaussians Spreadsheet.
 
 Answer: -.00715
 
@@ -122,8 +111,19 @@ Standardization changes covariance to equal correlation. Standardization leaves 
 Spreadsheet.
 
 Question 6
+Two stocks have the following expected annual returns:
+
+Oil stock – expected return = 9% with standard deviation = 13%
+IT stock – expected return = 14% with standard deviation = 25%
+The Stocks prices have a small negative correlation: R = -.22.
+
+What is the standard deviation of a portfolio consisting of 70% Oil and 30% IT?
+Hint: Use either the Algebra with Gaussians or the Markowitz Portfolio Optimization Spreadsheet.
+
 Standardization: (x - average)/std. deviation
 All other numbers can be found with Excel formula.
+
+Answer: 
 
 Comments:
 Use the Markowitz Portfolio Optimization Spreadsheet. Enter Oil Expected return in Cell C6, Oil standard deviation in cell C7, 
