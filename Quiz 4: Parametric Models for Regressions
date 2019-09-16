@@ -195,6 +195,8 @@ If the correlation is R = .33, and the point forecast orders $5.1 million, what 
 than $5.3 million?
 Hint: Use the Typical Problem with NormSDist Spreadsheet.
 
+Answer: 6.2%
+
 Comments:
 Convert $5.3 million to a z-score. The z-Score is (5.3-5.1)/.13 = (.2/.13) = 1.538.
 Input the z-score in the Excel formula (1 - Normsdist(z)) to get the probability of a score at least that high. 
