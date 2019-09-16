@@ -235,13 +235,15 @@ spent is 55 seconds, with an approximately Gaussian distribution and standard de
 investing some time and money in analytics tools, to gather and analyzing information about visitors and build a linear predictive
 model with a standard deviation of model error of 4 seconds.
 
-How much would the P.I. G. of that model be? 
+How much would the P.I.G. of that model be? 
 Hint: Use the Correlation and P.I.G. Spreadsheet
 
 link: 
 https://www.coursera.org/learn/analytics-excel/discussions/weeks/4/threads/KZSnK_yAEeaT0Qr5Ew1QIA
 https://www.coursera.org/learn/analytics-excel/discussions/weeks/4/threads/a6f1cf3vEeea5g61AFAY_A
 https://www.coursera.org/learn/analytics-excel/discussions/weeks/4/threads/KZSnK_yAEeaT0Qr5Ew1QIA
+
+Answer: 57.2%
 
 Comments:
 With no model, the correlation R = 0 and the “model error” is equal to the standard deviation of Y = 9 seconds. Standardized, 
