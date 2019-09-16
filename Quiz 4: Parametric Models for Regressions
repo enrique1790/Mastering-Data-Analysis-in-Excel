@@ -135,6 +135,8 @@ Link: https://www.coursera.org/learn/analytics-excel/discussions/weeks/4/threads
 Question 7
 R^2 = 1- (error)^2
 
+Answer: 10.36%
+
 Comment:
 "What upper bound for y will ensure that 95% of all possible outcomes for y will be below it?"
 This is Practice 2 (Regression Model and PIG) Question 5.
@@ -147,6 +149,9 @@ The difference is caused by the argument for the NORMSINV function.
 The argument for the NORMSINV function should have been 0.5+0.95/2, not 0.95 as suggested in the explanation. The NORMSINV function 
 returns the z-score such that NORM.S.DIST(z)=probability. In the context of the normal bell-shaped curve, the probability of the
 z-score for the upper-bound of the 95% confidence interval is the area to the left of the upper bound, which equals to 0.5+0.95/2.
+
+link:
+https://www.coursera.org/learn/analytics-excel/discussions/weeks/4/threads/AEoOjaqhEeiv7BKK7Uv20A
 
 Question 8
 Error = sqrt(1 - R^2)
