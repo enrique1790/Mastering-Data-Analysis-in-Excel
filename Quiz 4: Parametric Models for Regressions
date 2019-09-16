@@ -169,6 +169,11 @@ A 90% confidence interval means 5% above and 5% below the interval. Using p = .9
 This is the z-Score. Therefore the interval ranges from (1.64485)*($130,00) or $213,831 below the point forecast, to 
 (1.64485)*($130,000) = $213,831 above the forecast.
 
+Answer: The 90% confidence interval is from $213,831 below to 213,831 above the point forecast
+
+Link:
+https://www.coursera.org/learn/analytics-excel/discussions/weeks/4/threads/3bGlB4E3EeaBoRLD76N51Q
+
 
 Q9: 
 LINEST Function can be automatically calculated using 'Analysis Toolpack' excel Add-In. Once this add is loaded into the excel, you may
