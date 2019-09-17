@@ -123,7 +123,7 @@ Hint: Use either the Algebra with Gaussians or the Markowitz Portfolio Optimizat
 Standardization: (x - average)/std. deviation
 All other numbers can be found with Excel formula.
 
-Answer: 
+Answer: 10.44%
 
 Comments:
 Use the Markowitz Portfolio Optimization Spreadsheet. Enter Oil Expected return in Cell C6, Oil standard deviation in cell C7, 
@@ -208,9 +208,11 @@ customers as a function of a weighted sum of that customer’s past-years orders
 
 After standardizing the x and y data, what portion of the uncertainty about a customer’s order size is eliminated by their historical
 data combined with the model?
-
 Hint: Use the Correlation and P.I.G. Spreadsheet.
-link: https://www.coursera.org/learn/analytics-excel/discussions/weeks/4/threads/9OfREOuqEeegshJpFEMNaA
+
+Answer:
+link:
+https://www.coursera.org/learn/analytics-excel/discussions/weeks/4/threads/9OfREOuqEeegshJpFEMNaA
 
 # Question 11
 A restaurant offers different dinner “specials” each weeknight. The mean cash register receipt per table on Wednesdays is $75.25 with 
