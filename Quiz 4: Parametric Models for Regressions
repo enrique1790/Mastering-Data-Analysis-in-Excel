@@ -167,6 +167,27 @@ z-score for the upper-bound of the 95% confidence interval is the area to the le
 link:
 https://www.coursera.org/learn/analytics-excel/discussions/weeks/4/threads/AEoOjaqhEeiv7BKK7Uv20A
 
+Q8
+You are a data-analyst for a restaurant chain and are asked to forecast first-year revenues from new store locations. You use census 
+tract data to develop a linear model.
+
+Your first model has a standard deviation of model error of $25,000 at a correlation of R = .30. Your boss asks you to keep working 
+on improving the model until the new standard deviation of model error is $15,000 or less.
+
+What positive correlation R would you need to have a model error of $15,000?
+
+(Note: you can answer this question by making small additions to the Correlation and Model Error spreadsheet).
+
+Answer: R = .8200
+Comment: 
+The model error of standardized variables at R = .30 is .9539.
+
+Applying algebra, to obtain the required model error, you need a model error on standardized variables of ($15,000/$25,000)(.9539)
+= (.6)(.9539) = .57236.
+
+By definition of model error for standardized variables, .57236 = Sqrt(1-R^2). Applying algebra and solving for R,
+R = sqrt(1 - (.57236)^2) = .8200.
+
 Question 8
 Error = sqrt(1 - R^2)
 Differential Entropy=-log_2(Error)
