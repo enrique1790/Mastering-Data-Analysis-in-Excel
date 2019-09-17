@@ -210,9 +210,12 @@ After standardizing the x and y data, what portion of the uncertainty about a cu
 data combined with the model?
 Hint: Use the Correlation and P.I.G. Spreadsheet.
 
-Answer:
+Answer: 4.2%
 link:
 https://www.coursera.org/learn/analytics-excel/discussions/weeks/4/threads/9OfREOuqEeegshJpFEMNaA
+
+Comment:
+In the Correlation R column add 0.33 to any one to the cells. in the P.I.G column you will see the answer. 
 
 # Question 11
 A restaurant offers different dinner “specials” each weeknight. The mean cash register receipt per table on Wednesdays is $75.25 with 
