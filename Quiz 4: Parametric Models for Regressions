@@ -21,17 +21,19 @@ If the manufacturer wants to ensure that no more than 1 in 10,000 of its commerc
 should it set as the maximum temperature to which the alloy can be exposed?
 Hint: Refer to the Excel NormSFunctions Spreadsheet.
 
-Answer: 1539.0497
+Answer: 1460.9503 F
 
 Comments:
-I did not encounter that question when I was taking the course, so would try my best to explain based on my current understandings.
-If you are more comfortable with the statistical words, like significance level, then it might be understood this way:
+The manufacturer needs to find the z-score on the Gaussian distribution such that .0001 of the probability will be to the left of 
+that temperature, and .9999 to the right. Using Excel NormSInv, the z-score for .0001 is z = -3.7190.
 
-Mean is 1500, standard deviation is 10.5, and significance level (alpha) is 1/10000 = 0.0001 = 0.01%
+The maximum temperature that achieves the desired reliability is
 
-And because the alloy only softens at a higher temperature, but not a lower one, it is a one-tail problem. Then the temperature
-threshold should be something where 0.01% of the cases are on the right of the threshold. Hope this helps, and happy to discuss further.
-Best, Jane
+= mean – ((z-score)*(standard deviation) )
+
+= 1500 – (3.7190*10.5)
+
+= 1460.9503 F
 
 Link:
 https://www.coursera.org/learn/analytics-excel/discussions/weeks/4/threads/1BdETcMEEei_SAo-KdCgEA
