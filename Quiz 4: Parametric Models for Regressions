@@ -1,4 +1,18 @@
 Q1:
+
+A University admissions test has a Gaussian distribution of test scores with a mean of 500 and standard deviation of 100. 
+One student out-performed 97.4% of all test takers.
+
+What was their test score (rounded to the nearest whole number)?
+Hint: Refer to the Excel NormSFunctions Spreadsheet.
+
+Answer: 649
+
+Comment: Correct
+Z-score = NormSInv(.973) = 1.9431
+500 + (100*1.9431) = 694.3
+
+Q1: 
 A manufacturer has developed a specialized metal alloy for use in jet engines. In its pure form, the alloy starts to soften at 1500 F. 
 However, small amounts of impurities in production cause the actual temperature at which the alloy starts to lose strength to vary
 around that mean, in a Gaussian distribution with standard deviation = 10.5 degrees F.
