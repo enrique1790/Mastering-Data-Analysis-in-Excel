@@ -8,10 +8,14 @@ bin [10, 20] in the “probability histogram”?
 Height of the bin [10, 20] in the “probability histogram” = number of data points in the range of the bin divided by the total number 
 of data points
 
+Comment: 4%
+The approximate probability is (1+4)/125 = .04.
+
 Question 2 Suppose we have a range of outcomes between -10 to 10 that we divide into 5 bins of equal width. What is the smallest
 bin mean among the 5 bins?
 The smallest bin mean among the 5 bins=(-10+(-6))/2
 
+Answer: 
 Comment:
 the question tells you there are outcomes from -10 to 10 divided equally over 5 bins. that's 20 outcomes divided by 5 bins, so each 
 bin has a width of 4 outcomes.
@@ -28,6 +32,12 @@ Therefore the mean of Bin 1 is (-10+(-6))/2
 Question 3 True/False: A Gaussian distribution is more skewed than a uniform continuous distribution with the same variance.
 Gaussian distribution and uniform continuous distribution are both symmetric, and skewness is 0.
 
+Assume a continuous uniform probability distribution over the range [-12, 20]
+What is the entropy of this distribution?
+
+Comment: Incorrect
+That would be log2(64).
+
 Question 4 A Gaussian distribution has higher entropy than a uniform continuous distribution with the same variance.
 
 Entropy(Gaussian distribution)=2.05+log_2⁡σ
@@ -35,13 +45,20 @@ Variance(uniform continuous distribution)=(b-a)^2/12=σ^2
 Entropy(uniform continuous distribution)=log_2⁡ (b-a)=1.79+log_2⁡σ
 Therefore, Entropy (Gaussian distribution) > Entropy(uniform continuous distribution) with the same variance.
 
+Comment: Incorrect
+Be sure and include the standard deviation of 4.
+
 Question 5 Suppose we have a continuous uniform distribution on [-2,4]. What is its variance?
 Variance(uniform continuous distribution)=(b-a)^2 / 12
 
+Answer: .841
+Comment:
+
 Question 6 True/False: In a scatterplot of 100 ordered pairs drawn from two Gaussian random variables with mean = 0, variance = 1, 
 and correlation R = 0, it is possible to get a correlation of the ordered pairs = 0.99.
-
 Think about what a correlation of 0.99 means.
+
+Answer: No Change
 
 Comment:
 Is the correct answer "False"? Correlation measures the degree of associations between two variables. The order pairs were drawn
@@ -49,12 +66,20 @@ from two Gaussian random variables with correlation R=0, that means the two rand
 If R=0.99, that means the ordered pairs are almost perfectly associated. That is not possible if the ordered pairs are drawn from 
 two independent sources.
 
+The spreadsheet estimate changes slightly --- from .64 [.6377] to .64 [.6388] – this change is due to the version with -1 using more 
+bins on the data, making it slightly more accurate.
+
 Question 7 Which of the following statements about over-fitting is false:
 Please refer to lecture video.
 Link: https://www.coursera.org/learn/analytics-excel/discussions/weeks/5/threads/9mmOtcMhEeiTdg5seYVqZA
 
 Comment:
 The Modification Factor does have an impact on the cost per event.
+
+Incorrect
+Changing the scale does not change the minimum cost per event, which remains $975. However, it will change the value of the threshold 
+above which all results are classified positive.
+
 
 1. Raw scores (column A) are standardized (column B) and divided by the Modification Factor (column C) to bound the raw scores 
 in the range [-3.5,3.5].
@@ -86,7 +111,6 @@ is changed to 1.
 
 =MIN(H17:ER17) returns $1,250 when the factor is 1 but returns $975 when the factor is -1.
 
-
 Question 8:
 A traditional academic point system for grading AUC.
 
@@ -102,6 +126,28 @@ Such a line has a slope of 1, which implies that an improvement in True Positive
 increase in False Positive rate, regardless of the thresholds being used, i.e., every time the model correctly identified one more
 bomber, it also falsely identified a seagull as a bomber at the same time. Every time the alarm goes off, there is a 50/50 chance 
 that it is either a bomber or a seagull. Such a model is useless.
+
+Incorrect
+The clue that something more serious than over-fitting is going on is that the model’s AUC of .5 on the much larger set of 5,000 is no
+better than assigning binary classification purely at random. Rather than overfitting, it is more likely that the predictive model has 
+no value at all.
+
+Question 9
+If a multivariate linear regression gives a weight beta(1) of 0.4 on x(1) = “age in years,” and a new input x(7) of “age in months”
+is added to the regression data, which of the following statements is false?
+
+Comment:
+Incorrect
+This statement is true, because the x(1) and x(7) data are collinear, and adding x(7) adds nothing to the model performance. 
+However, the question asked you to identify which statement is false.
+
+Question 10
+Use the Excel Linest Function Spreadsheet that was provided in question #9.
+What is the Correlation, R for the linear regression shown in the example
+
+Comment:
+Incorrect
+This is (R^2) [Cell B42] squared.
 
 Q9 & Q10: 
 Link: https://www.coursera.org/learn/analytics-excel/discussions/weeks/5/threads/ErVs9YDREei_Sw7NSedeKA
