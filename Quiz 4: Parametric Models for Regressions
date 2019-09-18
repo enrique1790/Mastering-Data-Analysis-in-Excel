@@ -254,6 +254,27 @@ https://www.coursera.org/learn/analytics-excel/discussions/weeks/4/threads/9OfRE
 Comment:
 In the Correlation R column add 0.33 to any one to the cells. in the P.I.G column you will see the answer. 
 
+Q11:
+Customers who use online chat support can rate the help they receive from a customer support worker as a 0 (useless), 
+a 1, 2, 3, 4, or 5 (excellent). The mean rating is 3.935, with standard deviation = 1.01.
+
+A new support worker named Barbara has received, over her first 100 chat sessions, an average rating of 3.7. Her boss calls her
+in and threatens to fire her if her performance does not improve.
+
+Barbara replies “Its just bad luck - I’ve had more than my share of unhappy customers today.” Who is most likely right?
+
+Hint: Use the Typical Problem with NormSDist Spreadsheet.
+
+Answer: the boss
+Commentary: Incorrect
+Barbara’s performance has a Z score = (mean - actual) /standard deviation of the sample means = (3.7 - 3.935) / (1.01/sqrt(100)) 
+= -2.327.
+
+If Barbara’s performance is due to chance, the probability of observing a z-score as low, or lower, than -2.327 would be less than 1%.
+
+Note that due to the Central Limit Theorem, even though the raw customer scores do not have a Gaussian distribution, the sample means 
+will have a Gaussian distribution, so that use of the NormSDist function is appropriate. NormSDist(-2.327) = .0099898.
+
 # Question 11
 A restaurant offers different dinner “specials” each weeknight. The mean cash register receipt per table on Wednesdays is $75.25 with 
 standard deviation of $13.50. The restaurant experiments one Wednesday with changing the “special” from blue fish to lobster. The 
