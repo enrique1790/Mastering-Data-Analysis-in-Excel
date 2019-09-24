@@ -180,6 +180,12 @@ Question 9
 If a multivariate linear regression gives a weight beta(1) of 0.4 on x(1) = “age in years,” and a new input x(7) of “age in months”
 is added to the regression data, which of the following statements is false?
 
+Answer: 
+Guess: 
+Using Excel linest, and including x(1) and x(7) data , the new beta(7) on the age in months will be 0.
+If the x(1) data are removed, the new beta (7) on the new x(7) data will be 0.33
+If the x(1) data are removed, teh new beta(7) on the new x(7) data will be 0.4
+
 Comment:
 Incorrect
 This statement is true, because the x(1) and x(7) data are collinear, and adding x(7) adds nothing to the model performance. 
