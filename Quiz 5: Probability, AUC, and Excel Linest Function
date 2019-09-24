@@ -27,6 +27,7 @@ Q2
 Use the Excel Probability Functions Spreadsheet. Assume a continuous uniform probability distribution over the range [47, 51.5].
 What is the skewness of the probability distribution?
 Answer: 0
+Comment: The skewness of all uniform distributions is zero
 
 Question 2 Suppose we have a range of outcomes between -10 to 10 that we divide into 5 bins of equal width. What is the smallest
 bin mean among the 5 bins?
@@ -54,8 +55,7 @@ Assume a continuous uniform probability distribution over the range [-12, 20]
 What is the entropy of this distribution?
 
 Answer: Log(32,2) = 5 bits
-Comment: Incorrect
-That would be log2(64).
+Comment: The entropy is log2(20 –(-12) = log2(32)
 
 Question 4 A Gaussian distribution has higher entropy than a uniform continuous distribution with the same variance.
 
@@ -87,13 +87,7 @@ and correlation R = 0, it is possible to get a correlation of the ordered pairs 
 Think about what a correlation of 0.99 means.
 
 Answer: No Change
-
 Comment:
-Is the correct answer "False"? Correlation measures the degree of associations between two variables. The order pairs were drawn
-from two Gaussian random variables with correlation R=0, that means the two random variables are independent.
-If R=0.99, that means the ordered pairs are almost perfectly associated. That is not possible if the ordered pairs are drawn from 
-two independent sources.
-
 The spreadsheet estimate changes slightly --- from .64 [.6377] to .64 [.6388] – this change is due to the version with -1 using more 
 bins on the data, making it slightly more accurate.
 
@@ -109,10 +103,8 @@ threshold (row 10) that results in the lowest cost per event?
 Answer: .45
 Comment:
 The Modification Factor does have an impact on the cost per event.
-
-Incorrect
 Changing the scale does not change the minimum cost per event, which remains $975. However, it will change the value of the threshold 
-above which all results are classified positive.
+above which all results are classified positive, from .9 to .45.
 
 1. Raw scores (column A) are standardized (column B) and divided by the Modification Factor (column C) to bound the raw scores 
 in the range [-3.5,3.5].
@@ -170,34 +162,27 @@ Assume a binary classification model is trained on 200 ordered pairs of scores a
 Which statement is most likely to be correct?
 
 Answer: The Original model idetified signal as noise and has no predictive value on data
-
-Incorrect
-The clue that something more serious than over-fitting is going on is that the model’s AUC of .5 on the much larger set of 5,000 is no
-better than assigning binary classification purely at random. Rather than overfitting, it is more likely that the predictive model has 
-no value at all.
+Comment:
+The model’s AUC of .5 on the much larger set of 5,000 is no better than assigning binary classification purely at random. It appears 
+likely that the model has no predictive value at all.
 
 Question 9
 If a multivariate linear regression gives a weight beta(1) of 0.4 on x(1) = “age in years,” and a new input x(7) of “age in months”
 is added to the regression data, which of the following statements is false?
 
 Answer: If the x(1) data are removed, teh new beta(7) on the new x(7) data will be 0.4
-Guess: 
-Using Excel linest, and including x(1) and x(7) data , the new beta(7) on the age in months will be 0.
-If the x(1) data are removed, the new beta (7) on the new x(7) data will be 0.33
-If the x(1) data are removed, teh new beta(7) on the new x(7) data will be 0.4
-
 Comment:
-Incorrect
-This statement is true, because the x(1) and x(7) data are collinear, and adding x(7) adds nothing to the model performance. 
-However, the question asked you to identify which statement is false.
+This statement is false. Because the x(1) and x(7) data are collinear, the model R^2 is unchanged, but because x(7) has 12 times the standard 
+deviation of x(1), the correct coefficient will be 1/12 as much, or .0333.
+
 
 Question 10
 Use the Excel Linest Function Spreadsheet that was provided in question #9.
 What is the Correlation, R for the linear regression shown in the example
 
 Answer: .778 or -778
-Comment: Incorrect
-This is (R^2) [Cell B42] squared.
+Comment: 
+We know R is the square root of R^2 [Cell B42] but don’t immediately know whether the correlation is positive or negative.
 
 Q9 & Q10: 
 Link: https://www.coursera.org/learn/analytics-excel/discussions/weeks/5/threads/ErVs9YDREei_Sw7NSedeKA
