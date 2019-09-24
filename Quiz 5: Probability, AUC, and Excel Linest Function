@@ -163,6 +163,14 @@ increase in False Positive rate, regardless of the thresholds being used, i.e., 
 bomber, it also falsely identified a seagull as a bomber at the same time. Every time the alarm goes off, there is a 50/50 chance 
 that it is either a bomber or a seagull. Such a model is useless.
 
+Q8
+Refer to the AUC Calculator Spreadsheet previously provided.
+Assume a binary classification model is trained on 200 ordered pairs of scores and outcomes and has an AUC of .91 on this 
+“training set.” The same model, on 5,000 new scores and outcomes, has an AUC of .5.
+Which statement is most likely to be correct?
+
+Answer: The Original model idetified signal as noise and has no predictive value on data
+
 Incorrect
 The clue that something more serious than over-fitting is going on is that the model’s AUC of .5 on the much larger set of 5,000 is no
 better than assigning binary classification purely at random. Rather than overfitting, it is more likely that the predictive model has 
