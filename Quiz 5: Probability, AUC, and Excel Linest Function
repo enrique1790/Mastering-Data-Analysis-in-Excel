@@ -23,11 +23,16 @@ correct ranges in step 1. Thus, bin 1 = count 5; bin 2 = count 117; bin 3 = coun
 Link:
 https://www.coursera.org/learn/analytics-excel/discussions/weeks/5/threads/MowYEwRWEee-uQ7R_UJsXg
 
+Q2
+Use the Excel Probability Functions Spreadsheet. Assume a continuous uniform probability distribution over the range [47, 51.5].
+What is the skewness of the probability distribution?
+Answer: 0
+
 Question 2 Suppose we have a range of outcomes between -10 to 10 that we divide into 5 bins of equal width. What is the smallest
 bin mean among the 5 bins?
 The smallest bin mean among the 5 bins=(-10+(-6))/2
 
-Answer: 
+Answer:  
 Comment:
 the question tells you there are outcomes from -10 to 10 divided equally over 5 bins. that's 20 outcomes divided by 5 bins, so each 
 bin has a width of 4 outcomes.
@@ -41,12 +46,14 @@ Bin 5: 6 to 10
 and the bin with the smallest mean will be the one with the smallest range of outcomes from -10 to -6.
 Therefore the mean of Bin 1 is (-10+(-6))/2
 
-Question 3 True/False: A Gaussian distribution is more skewed than a uniform continuous distribution with the same variance.
+Question 3 
+True/False: A Gaussian distribution is more skewed than a uniform continuous distribution with the same variance.
 Gaussian distribution and uniform continuous distribution are both symmetric, and skewness is 0.
 
 Assume a continuous uniform probability distribution over the range [-12, 20]
 What is the entropy of this distribution?
 
+Answer: Log(32,2) = 5 bits
 Comment: Incorrect
 That would be log2(64).
 
@@ -57,16 +64,25 @@ Variance(uniform continuous distribution)=(b-a)^2/12=σ^2
 Entropy(uniform continuous distribution)=log_2⁡ (b-a)=1.79+log_2⁡σ
 Therefore, Entropy (Gaussian distribution) > Entropy(uniform continuous distribution) with the same variance.
 
+Answer:  =NORMDIST(3.5,3,4,FALSE) = .099
 Comment: Incorrect
 Be sure and include the standard deviation of 4.
+
+Q5:
+Use the Excel Probability Functions Spreadsheet previously provided in this quiz.
+Assume a Gaussian Probability Distribution with mean = 3 and standard deviation = 4.
+What is the cumulative distribution at x = 7?
+
+Answer: =NORMDIST(3.5,3,4,FALSE) = .841
 
 Question 5 Suppose we have a continuous uniform distribution on [-2,4]. What is its variance?
 Variance(uniform continuous distribution)=(b-a)^2 / 12
 
-Answer: .841
-Comment:
+Answer:
+Comment: 
 
-Question 6 True/False: In a scatterplot of 100 ordered pairs drawn from two Gaussian random variables with mean = 0, variance = 1, 
+Question 6 
+True/False: In a scatterplot of 100 ordered pairs drawn from two Gaussian random variables with mean = 0, variance = 1, 
 and correlation R = 0, it is possible to get a correlation of the ordered pairs = 0.99.
 Think about what a correlation of 0.99 means.
 
@@ -85,13 +101,18 @@ Question 7 Which of the following statements about over-fitting is false:
 Please refer to lecture video.
 Link: https://www.coursera.org/learn/analytics-excel/discussions/weeks/5/threads/9mmOtcMhEeiTdg5seYVqZA
 
+Use the AUC Calculator Spreadsheet.
+
+If the “modification factor” in the original example given in the AUC Calculator Spreadsheet is changed from -1 to -2, what is the 
+threshold (row 10) that results in the lowest cost per event?
+
+Answer: .45
 Comment:
 The Modification Factor does have an impact on the cost per event.
 
 Incorrect
 Changing the scale does not change the minimum cost per event, which remains $975. However, it will change the value of the threshold 
 above which all results are classified positive.
-
 
 1. Raw scores (column A) are standardized (column B) and divided by the Modification Factor (column C) to bound the raw scores 
 in the range [-3.5,3.5].
@@ -122,6 +143,9 @@ If an adjusted final score is above the threshold when the factor is -1, it will
 is changed to 1.
 
 =MIN(H17:ER17) returns $1,250 when the factor is 1 but returns $975 when the factor is -1.
+
+Link: 
+https://www.coursera.org/learn/analytics-excel/discussions/weeks/5/threads/6GrOMfPqEee0LBIiHbeI1g
 
 Question 8:
 A traditional academic point system for grading AUC.
