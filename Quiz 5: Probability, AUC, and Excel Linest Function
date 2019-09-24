@@ -8,8 +8,20 @@ bin [10, 20] in the “probability histogram”?
 Height of the bin [10, 20] in the “probability histogram” = number of data points in the range of the bin divided by the total number 
 of data points
 
-Comment: 4%
-The approximate probability is (1+4)/125 = .04.
+Answer: 4%
+
+Comment: The approximate probability is (1+4)/125 = .04.
+
+1. The quiz is worded incorrectly (as of Aug. 6, 2017) and the new ranges should be as Chuan Ye suggested above, with the decimal 
+moved 1 place to the left for each value: bin 1 [-0.3,-.01); bin 2 [-0.1, 0.1); bin 3 [0.1, 0.3).
+
+2. Since you must keep the total number of outcomes at 125, this means you must adjust the count of outcomes in each bin to fit the 
+correct ranges in step 1. Thus, bin 1 = count 5; bin 2 = count 117; bin 3 = count 3; bins 4 and 5 = count 0.
+
+3. This gives a probability for bin 1 that is one of the available answers.
+
+Link:
+https://www.coursera.org/learn/analytics-excel/discussions/weeks/5/threads/MowYEwRWEee-uQ7R_UJsXg
 
 Question 2 Suppose we have a range of outcomes between -10 to 10 that we divide into 5 bins of equal width. What is the smallest
 bin mean among the 5 bins?
