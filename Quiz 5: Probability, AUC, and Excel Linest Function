@@ -180,7 +180,7 @@ Question 9
 If a multivariate linear regression gives a weight beta(1) of 0.4 on x(1) = “age in years,” and a new input x(7) of “age in months”
 is added to the regression data, which of the following statements is false?
 
-Answer: 
+Answer: If the x(1) data are removed, teh new beta(7) on the new x(7) data will be 0.4
 Guess: 
 Using Excel linest, and including x(1) and x(7) data , the new beta(7) on the age in months will be 0.
 If the x(1) data are removed, the new beta (7) on the new x(7) data will be 0.33
@@ -195,7 +195,7 @@ Question 10
 Use the Excel Linest Function Spreadsheet that was provided in question #9.
 What is the Correlation, R for the linear regression shown in the example
 
-Answer: .606
+Answer: .778 or -778
 Comment: Incorrect
 This is (R^2) [Cell B42] squared.
 
