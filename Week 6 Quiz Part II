@@ -5,42 +5,69 @@ Common Mistakes
 When you use the test dataset, don't forget to use the outcome for the test dataset too. 
 [Outcome is the column with 1 and 0 that shows whether the cardholder defaulted or not]
 
-Question 1 What is the AUC of the Eggertopia Scores on the Training Set?
+## Question 1 What is the AUC of the Eggertopia Scores on the Training Set?
 Copy paste the Eggertopia Credit Scores (1-200) into the AUC calculator tab at A23 and read the value from the tab.
 
-Question 2 What is the optimum threshold on the training set to minimize the average cost per test?
+Comment:
+.85 r
+
+## Question 2 What is the optimum threshold on the training set to minimize the average cost per test?
 Look for the threshold level at the minimum cost
+Comment:
+15 x
+.1 r
 
-Question 3 What is the average cost per test at the training set optimum threshold?
+## Question 3 What is the average cost per test at the training set optimum threshold?
 The average cost per test at the training set optimum threshold is shown in the minimum cost cell located at the upper right corner.
+Comment:
+$640 x
+$500 x
+$540 x
 
-Question 4 What is the AUC of the Eggertopia scores on the Test Set?
+## Question 4 What is the AUC of the Eggertopia scores on the Test Set?
 Copy paste the Eggertopia Credit Scores (201-400) into the AUC calculator tab at A23 and read the value from the tab.
+Comment:
+.85 r
 
-Question 5 Using the same threshold as used on the training set, what is the cost per event of the Eggertopia scores on the Test Set?
+## Question 5 Using the same threshold as used on the training set, what is the cost per event of the Eggertopia scores on the Test Set?
 At the threshold of Question 2, what is the cost for the test set?
+Comment:
+$838 r
 
-Question 6 What is the maximum, (break-even) price that the bank could theoretically pay per score for Eggertopia Data, if it did not have your model and its data – but simply issued cards to everyone who applied?
+## Question 6 What is the maximum, (break-even) price that the bank could theoretically pay per score for Eggertopia Data, if it did not have your model and its data – but simply issued cards to everyone who applied?
 Hint: In other words, what is the difference in cost per event to the bank at a 25% default rate, and at the default rate 
 (False Negative Rate) and False Positive rate of the Eggertopia scores at their optimum threshold?*
 
 $1250 - the answer in Question 5
 
-Question 7 The True Positive rate?
+Comment:
+$418 x
+$423 x
+$412 r
+
+## Question 7 The True Positive rate?
 Shown in the row 12 and under the threshold identified in Question 2
+Comment:
+.72 r
 
-Question 8 What is its Positive Predictive Value?
+## Question 8 What is its Positive Predictive Value?
 Positive Predictive Value (PPV) = e/c (Please refer to Binary Classification workbook)
+Comment:
+.50 x
+.54 x
+.52 x
 
-Question 9 What is the Negative Predictive Value?
+## Question 9 What is the Negative Predictive Value?
 Negative Predictive Value (NPV) = h/d (Please refer to Binary Classification workbook)
+Comment:
+200 r
 
-Question 10 What is the “test incidence” of Eggertopia’s classification, on the test set, at the threshold from the training set? 
+## Question 10 What is the “test incidence” of Eggertopia’s classification, on the test set, at the threshold from the training set? 
 In other words, what percentage of applicants does Eggertopia classify Positive as “defaulters” and what percentage Negative as 
 “non-defaulters” on the Test Set?*
 TP + FP / total population = number of defaulters; non-defaulters = total population - defaulters
 
-Question 11 What is the maximum, or break-even, price that the bank could pay per score for Eggertopia, given that it already has
+## Question 11 What is the maximum, or break-even, price that the bank could pay per score for Eggertopia, given that it already has
 your model and data?
 Value per score for Eggertopia - Value per socre for your model
 
