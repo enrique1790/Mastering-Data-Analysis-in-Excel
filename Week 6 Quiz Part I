@@ -67,17 +67,18 @@ Thresholds greater than 2.5 – not utilizing full range
 Thresholds less than 2.5 – not utilizing full range
 
 Comment:
+20 x
+1000 x
+3.5 r
+((((Thresholds greater than 2.5 may not be utilizing the full range for analysis � 
+Thresholds less than -2.5 0 may not be utilizing the full range for analysis)))))))
 
 ## Question 5 (Don't include "$")
 Any answer > $1250 has no incremental value – is simply wrong
 Any answer > $1000 is of minimal value
 
 Comment:
-20 x
-1000 x
-3.5 r
-((((Thresholds greater than 2.5 may not be utilizing the full range for analysis � 
-Thresholds less than -2.5 0 may not be utilizing the full range for analysis)))))))
+600 r
 
 ## Question 6
 If you find that your costs per event on the test set are much higher than your costs per event on the training set, 
@@ -133,6 +134,7 @@ Defaulters test incidence 70 - 100% - poor
 Defaulters test incidence >0 < 25% - ok
 Defaulters test incidence >25% < 70% good
 
+Any model that is reducing uncertainty will have a True Positive Rate...
 Comment:
 ...Equal to the Test Incidence (% of outcomes classified as "default") x
 ...Less than the Test Incidence (% of outcomes classified as "default") x
