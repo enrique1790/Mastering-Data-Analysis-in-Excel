@@ -64,14 +64,84 @@ Question: What is the standard deviation of model error in dollars on the Traini
 
 Comment:
 
-## Question 11
+## Question 11: For this question, use the Linear Regression Forecasting explanation and Excel spreadsheet.
 
-## Question 12
+Question: What is the 90% confidence interval, in dollars, on the Training Set?
+**This may seem similar to question 6, but Q6 refers to the Test Set.
 
-## Question 13
+Comment:
 
-## Question 14
+## Question 12: For this question, use the Linear Regression Forecasting explanation and Excel spreadsheet.
 
-## Question 15
+Question: What is the Percentage Information Gain (P.I.G.) on the Training Set?
+**This may seem similar to question 7, but Q7 refers to the Test Set.
 
-## Question 16
+Comment:
+
+## Question 13 : Questions 13 through 15 use the same example applicant.
+The following data are known about the sample applicant:
+
+Age: 42.00
+Years at Employer: 12.44
+Years at Address: 0.9
+Income: $121,400
+CC debt: -34,228
+Auto debt: -23,411
+
+To convert above inputs to standardized form, locate the Training Set Spreadsheet (first bottom tab of workbook) in the Data for Final
+Project Workbook.
+
+Data_for_final_project.xlsx
+
+Use the input means [Cells C207:H207] and standard deviations [Cells C209:H209].
+
+Use the Training Set profitability mean [$1,905.51] and standard deviation [$5755.91] from the Profit and Loss (last bottom tab) 
+Spreadsheet. Use the Test Set standard deviation of error on standardized outputs of .6750
+
+Question: What is the point estimate of profitability, in dollars?
+
+Comment:
+
+## Question 14: The following data are known about the sample applicant:
+
+Age: 42.00
+Years at Employer: 12.44
+Years at Address: 0.9
+Income: $121,400
+CC debt: -34,228
+Auto debt: -23,411
+
+To convert above inputs to standardized form, locate the Training Set Spreadsheet (first bottom tab) in the Data for Final Project
+Workbook.
+
+Use those means [Cells C207:H207] and standard deviations [Cells C209:H209].
+
+Use the Training Set profitability mean [$1,905.51] and standard deviation [$5755.91] from the Profit and Loss (last tab on bottom) 
+Spreadsheet. Use the Test Set standard deviation of error on standardized outputs of .6750
+
+Question: With 50% confidence, what is the range of profitability?
+
+Comment: 
+
+## Question 15: The following data are known about the sample applicant:
+Age: 42.00
+Years at Employer: 12.44
+Years at Address: 0.9
+Income: $121,400
+CC debt: -34,228
+Auto debt: -23,411
+
+To convert above inputs to standardized form, locate the Training Set Spreadsheet (bottom tab) in the Data for Final Project Workbook.
+Use those means [Cells C207:H207] and standard deviations [Cells C209:H209].
+
+Use the Training Set profitability mean [$1,905.51] and standard deviation [$5755.91] from the Profit and Loss (bottom tab) Spreadsheet
+Use the Test Set standard deviation of error on standardized outputs of .6750 .
+
+Question: With 99% confidence, what is the range of profitability?
+
+Comment: 
+
+## Question 16: Comparing Test Set and Training Set Performance
+Question 15: Between the Training Set and the Test Set, the dollar value of the standard deviation of model error…
+
+
