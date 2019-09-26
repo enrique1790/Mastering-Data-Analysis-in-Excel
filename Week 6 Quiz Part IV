@@ -147,6 +147,8 @@ Spreadsheet. Use the Test Set standard deviation of error on standardized output
 Question: What is the point estimate of profitability, in dollars?
 
 Comment:
+-$10,683.61 x
+$10,683.61 r
 
 ## Question 14: The following data are known about the sample applicant:
 
@@ -168,6 +170,9 @@ Spreadsheet. Use the Test Set standard deviation of error on standardized output
 Question: With 50% confidence, what is the range of profitability?
 
 Comment: 
+Range from $12,962.61 to $10,683.61 x
+Range from $11,823.28 to $9,543.94 x
+Range from $13,304.16 to $8,063.06. r
 
 ## Question 15: The following data are known about the sample applicant:
 Age: 42.00
@@ -185,9 +190,13 @@ Use the Test Set standard deviation of error on standardized outputs of .6750 .
 
 Question: With 99% confidence, what is the range of profitability?
 
-Comment: 
+Comment: Range from $20,691.32 to $675.90. r
 
 ## Question 16: Comparing Test Set and Training Set Performance
 Question 15: Between the Training Set and the Test Set, the dollar value of the standard deviation of model error…
 
-
+Comment:
+Decreased by about 15%, which suggests a very strong model on Test Set data. x
+Increased by more than 25%, which suggests possible model over-fitting. x
+Increased by less than 20%, which suggests minimal model over-fitting. r
+Increased by more than 50%, which leads to the conclusion of model over-fitting. x
