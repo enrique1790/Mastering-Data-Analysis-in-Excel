@@ -5,31 +5,31 @@ Update on 11/17/15: Solution is given after submitting the quiz
 Click to review LINEST FUNCTION
 Click to download week 6 Excel workbook
 
-Question 1 What are your values for each “beta” on the training set?
+## Question 1 What are your values for each “beta” on the training set?
 Use the Excel “Linest” function. For more information, please refer to Week 4 video.
 *The betas from Linest function are reversed in order
 
-Question 2 What is the root mean square residual error of your model on the standardized training set?
+## Question 2 What is the root mean square residual error of your model on the standardized training set?
 Root mean square residual error = SQRT(1-R^2)
 
-Question 3 What is the Correlation, R, of your model on the training set?
+## Question 3 What is the Correlation, R, of your model on the training set?
 Correlation R = SQRT(R^2); R^2 is given by LINEST function
 
-Question 4 Using the parametric formula [parametric because it assumes inputs and errors are Gaussian and continuous PDF is appropriate]
+## Question 4 Using the parametric formula [parametric because it assumes inputs and errors are Gaussian and continuous PDF is appropriate]
 I(X:Y) = log(1/SQRT(1-R^2)). Assuming results on training set were sustainable (a very big assumption) what is the information gain of
 your linear regression model on the training set, in average bits per event?
 I(X:Y) = log(1/SQRT(1-R^2))
 
-Question 5 In the Final Project workbook, the 7.4 Datapoints and Questions Spreadsheet lists data for 5 new credit card applicants 
+## Question 5 In the Final Project workbook, the 7.4 Datapoints and Questions Spreadsheet lists data for 5 new credit card applicants 
 (labeled “Final A,” “Final B,” “Final C,” “Final D,” and “Final E”). Assume the mean profitability is $2,000 and the standard deviation
 of profitability is $5,100.
 Calculate the expected profit point estimate in dollars ($) for the 5 new applicants.
 Profitability = mean + std. profitability * std. deviation
 
-Question 6 What is the profit range that would cover 90% of outcomes (if model performance is assumed stable on future data)
+## Question 6 What is the profit range that would cover 90% of outcomes (if model performance is assumed stable on future data)
 Range = Mean +/- Std.Dev * z-score * Root Mean Square Error
 
-Question 7 What is the root mean square residual error of your model (with betas optimized on the training set), when you run it on 
+## Question 7 What is the root mean square residual error of your model (with betas optimized on the training set), when you run it on 
 the test set?
 
 y = Actual profitability
@@ -38,7 +38,7 @@ SS1 = Sum of (y-y^)^2
 SS2 = Sum of y^2
 Root mean square residual error = SQRT(SS1/SS2)
 
-Question 8a What is the Correlation, R, of your model on the test set?*
+## Question 8a What is the Correlation, R, of your model on the test set?*
 
 y = Actual profitability
 y^ = Predicted profitability using the model with betas from training set
@@ -46,13 +46,32 @@ SS1 = Sum of (y-y^)^2
 SS2 = Sum of y^2
 R = SQRT(1-SS1/SS2)
 
-Question 8b If your model performs worse on the test set (which I expect it will) this is because the multivariate linear regression
+## Question 8b If your model performs worse on the test set (which I expect it will) this is because the multivariate linear regression
 over-fits noise in the original Training Set. However, for now we will not try to correct or improve the original “linest” model.
 
 Using the same parametric assumptions as above, what is the information gain of the linear regression model on the training set, 
 in average bits per event?
 I(X:Y) = log(1/SQRT(1-R^2))
 
-Question 9 Based on your new root mean square error, what is the new 90% confidence interval for your profitability estimates for 
+## Question 9 Based on your new root mean square error, what is the new 90% confidence interval for your profitability estimates for 
 the five applicants above?
 Range = Mean +/- Std.Dev * z-score * Root Mean Square Error
+
+## Question 10 
+For this question, use the Linear Regression Forecasting explanation and Excel spreadsheet.
+Question: What is the standard deviation of model error in dollars on the Training Set?
+**This may seem similar to question 5, but Q5 refers to the Test Set.
+
+Comment:
+
+## Question 11
+
+## Question 12
+
+## Question 13
+
+## Question 14
+
+## Question 15
+
+## Question 16
