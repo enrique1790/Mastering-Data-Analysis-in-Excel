@@ -1,4 +1,4 @@
-Mentor Hints for Week 6 Quiz Part I (13 questions)
+### Mentor Hints for Week 6 Quiz Part I (13 questions)
 Hi Class, feel free to leave your questions below and I will answer them.
 
 Click to download Excel workbook
@@ -12,7 +12,7 @@ When you use test dataset, make sure you use the outcome for the test dataset to
 Sample Answer for Final Project
 https://www.coursera.org/learn/analytics-excel/supplement/OHBGM
 
-Question 1
+## Question 1
 Your model should have at least two data points. For instance, 
 [Credit Score from -3.5 - 3.5] = constant + a*X1 + b*X2 + c*X3
 
@@ -28,7 +28,7 @@ There are many ways to build your model, and here is one simple way using Excel:
 Comment:
 1 r
 
-Question 2
+## Question 2
 <.5 is not valid
 .5 to < .59 is low value
 .6 - .75 is ok
@@ -44,7 +44,7 @@ dividing by -1.
 .5 has no predictive value.
 .9 or higher is too good to be true!))))
 
-Question 3
+## Question 3
 If the test set AUC is much worse than the training set AUC, consider making your model simpler – probably using fewer input variables
 – as it is probably over-fitting the training set data.
 
@@ -62,13 +62,13 @@ Comment:
 .5 means no predictive value
 > .90 is too good to be true!)))))
 
-Question 4
+## Question 4
 Thresholds greater than 2.5 – not utilizing full range
 Thresholds less than 2.5 – not utilizing full range
 
 Comment:
 
-Question 5 (Don't include "$")
+## Question 5 (Don't include "$")
 Any answer > $1250 has no incremental value – is simply wrong
 Any answer > $1000 is of minimal value
 
@@ -79,19 +79,13 @@ Comment:
 ((((Thresholds greater than 2.5 may not be utilizing the full range for analysis � 
 Thresholds less than -2.5 0 may not be utilizing the full range for analysis)))))))
 
-Question 6
+## Question 6
 If you find that your costs per event on the test set are much higher than your costs per event on the training set, 
 consider making your model simpler – probably using fewer input variables – as it is probably still over-fitting the training set data.
 Problems that are were not obvious at the ROC-curve stage may emerge when minimizing costs.
 
 Comment:
-Finding the Minimum Cost Per Event
-Question: Again referring only to the Training Set data, what is the overall minimum cost-per-event?
-Hint: You will need this number to answer later questions. If you used the AUC
-
-Calculator, the overall minimum cost per event will be displayed in Cell J2.
-Note: for Coursera to interpret your answer correctly you must give your answer as an integer - no decimals or dollar sign. 
-For Example - enter $800.00 as "800" 600 r
+600 r
 
 Question 7 (Don't include "$")
 Must be $1250 minus previous answer.
