@@ -94,7 +94,7 @@ your costs per event on the training set, consider making your model simpler �
 probably using fewer input variables as it is probably still over-fitting the �
 training set data. Problems with over-fitting that are were not obvious at the ROCcurve stage may emerge when minimizing costs.)))))))))
 
-Question 7 (Don't include "$")
+## Question 7 (Don't include "$")
 Must be $1250 minus previous answer.
 
 <=$100 - poor
@@ -110,7 +110,7 @@ Comment:
 < $250 to <= $450 savings is a very good model
 >$450 savings is an excellent model))))))))
 
-Question 8 (Don't include "days")
+## Question 8 (Don't include "days")
 Take the earning from each card and multiply by the number of credit card applicants per day will give you the money earned per day.
 
 More than a week – poor
@@ -127,7 +127,7 @@ Comment:
 1 day too good to be true!))))))))) 
 
 
-Question 9 (Don't include "%")
+## Question 9 (Don't include "%")
 Defaulters test incidence 0% - poor
 Defaulters test incidence 70 - 100% - poor
 Defaulters test incidence >0 < 25% - ok
@@ -138,7 +138,7 @@ Comment:
 ...Less than the Test Incidence (% of outcomes classified as "default") x
 ...Greater than the Test Incidence (% of outcomes classified as "default")
 
-Question 10
+## Question 10
 Given that the base rate of default in the population is 25%, any test that is reducing uncertainty will have a Positive 
 Predictive Value (PPV)...
 
@@ -147,7 +147,7 @@ Comment:
 ...Less than .25 x
 ...Greater than .25
 
-Question 11
+## Question 11
 Given that the base rate of default in the population is 25%, any test that is reducing uncertainty will have a Negative Predictive 
 Value (NPV)...
 
@@ -156,7 +156,7 @@ Equal to .75 x
 ...Less than .75 x
 ...Greater than .75
 
-Question 12
+## Question 12
 Confusion Matrix Metrics. To determine all performance metrics for a binary classification, it is sufficient to have three values
 The Condition Incidence (here the default rate of 25%) The probability of True Positives (the True Positive rate multiplied by the
 Condition Incidence)
@@ -176,7 +176,7 @@ Comment:
 .30 r
 (((((((<= .25 is incorrect))))))))
 
-Question 13
+## Question 13
 Question: What is your model s test incidence ? � � � Save this answer as it will be needed again for Part 3 (Quiz 3)
 
 Comment:
