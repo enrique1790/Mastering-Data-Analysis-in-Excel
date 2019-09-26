@@ -85,7 +85,14 @@ consider making your model simpler – probably using fewer input variables – 
 Problems that are were not obvious at the ROC-curve stage may emerge when minimizing costs.
 
 Comment:
-600 r
+ 200 x
+1 x
+150 x
+700.00 r
+((((((If you find that your costs per event on the test set are much higher than
+your costs per event on the training set, consider making your model simpler �
+probably using fewer input variables as it is probably still over-fitting the �
+training set data. Problems with over-fitting that are were not obvious at the ROCcurve stage may emerge when minimizing costs.)))))))))
 
 Question 7 (Don't include "$")
 Must be $1250 minus previous answer.
@@ -95,6 +102,14 @@ Must be $1250 minus previous answer.
 < 250 to <= 450 very good
 >450 – excellent
 
+Comment:
+100 x
+200 r
+(((((((((<=$150 savings is a weak model
+<$150 to <= $250 savings is an ok model
+< $250 to <= $450 savings is a very good model
+>$450 savings is an excellent model))))))))
+
 Question 8 (Don't include "days")
 Take the earning from each card and multiply by the number of credit card applicants per day will give you the money earned per day.
 
@@ -103,9 +118,78 @@ More than a week – poor
 2-3 days – excellent
 1 day – too good to be true!
 
-Question 9 (Don't include "%")
+Comment:
+700000 x
+3 r
+((((((More than a week poor �
+4-7 days very good �
+2-3 days excellent �
+1 day too good to be true!))))))))) 
 
+
+Question 9 (Don't include "%")
 Defaulters test incidence 0% - poor
 Defaulters test incidence 70 - 100% - poor
 Defaulters test incidence >0 < 25% - ok
 Defaulters test incidence >25% < 70% good
+
+Comment:
+...Equal to the Test Incidence (% of outcomes classified as "default") x
+...Less than the Test Incidence (% of outcomes classified as "default") x
+...Greater than the Test Incidence (% of outcomes classified as "default")
+
+Question 10
+Given that the base rate of default in the population is 25%, any test that is reducing uncertainty will have a Positive 
+Predictive Value (PPV)...
+
+Comment:
+...Equal to .25 x
+...Less than .25 x
+...Greater than .25
+
+Question 11
+Given that the base rate of default in the population is 25%, any test that is reducing uncertainty will have a Negative Predictive 
+Value (NPV)...
+
+Comment:
+Equal to .75 x
+...Less than .75 x
+...Greater than .75
+
+Question 12
+Confusion Matrix Metrics. To determine all performance metrics for a binary classification, it is sufficient to have three values
+The Condition Incidence (here the default rate of 25%) The probability of True Positives (the True Positive rate multiplied by the
+Condition Incidence)
+
+The Test Incidence (also called classification incidence - the sum of the � � � � probability of True Positives and False Positives)
+These three values can all be obtained from the AUC Calculator Spreadsheet and and then used as inputs to the Information Gain
+Calculator Spreadsheet to determine all other performance metrics.
+
+AUC_Calculator and Review of AUC Curve.xlsx
+Information Gain Calculator.xlsx
+
+Question: What is your model s True Positive Rate? � Save this answer as it will be needed again for Part 3 (Quiz 3)
+
+Comment:
+1 x
+30 x
+.30 r
+(((((((<= .25 is incorrect))))))))
+
+Question 13
+Question: What is your model s test incidence ? � � � Save this answer as it will be needed again for Part 3 (Quiz 3)
+
+Comment:
+0 x
+1 x
+1000 x
+200.00 x
+Test Incidences cannot be so small that they force a high false negative rate nor
+large that they force a high false positive rate. A perfect test will of course
+have a Test Incidence equal to the Condition Incidence but most classification �
+systems are focused on avoiding false negatives and have a higher Test Incidence
+than Condition Incidence.
+
+
+
+
