@@ -42,7 +42,7 @@ The incremental financial value per applicant of my model over no model on the T
 The only basis to evaluate over-fitting is to give the same metrics on the Test Set and Training Set, and compare them.
 
 Comment:
-
+Refer to the text box below for a response concerning over-fitting.
 
 6. Evaluate your model on the Test Set data. How confident are you that your model  does not over-fit the Training Set data?
 A. Choose between three broad degrees of confidence: very somewhat or not at � � � � � all. 
