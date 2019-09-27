@@ -1,0 +1,56 @@
+### Peer-graded Assignment: Part 5: Modeling Credit Card Default Risk and Customer Profitability
+
+1. What is your predictive model?
+
+a. Describe the arithmetic clearly so that another learner could implement your model on new standardized input data if they wished.
+
+b. Give an example of the score you would assign the following applicant, whether they would be approved or rejected for a credit card 
+and why.
+
+Comment: My predictive model is 
+(Income - Credit Card Debt - Auto Debt) / (Age*Years at employer*Years at address)
+
+the less outcome, the better. Then, I did standardized Data by using
+
+(Output from my model per applicant - mean)/ Std. 
+and my conclusion is When the output from standardized test <= -0.20 that mean the bank can approve, while
+when the output from standardized test > -0.20 that mean the bank should reject.
+
+2. Give an example of the score you would assign the following applicant, whether they would be approved or rejected for a credit card 
+and why.
+
+Comments:
+Age: -0.06
+Years at employer: 0.23
+Years at address: -0.58
+Income: -0.38
+Credit card debt: 0.14
+Auto debt: -0.06
+
+3. What would the bank’s average profit per applicant be (net profits divided by 200) when using your predictive model on the 
+Training Set?
+
+Comments:
+According to my model, the bank would approved this applicant which the test score is -0.278, less than -0.2.
+
+4. What is the incremental financial value per applicant of your model over no model on the Training Set?
+
+Comment:
+The incremental financial value per applicant of my model over no model on the Training Set is $122 per applicant.
+
+5. Evaluate your model on the Test Set data. How confident are you that your model does not over-fit the Training Set data? 
+The only basis to evaluate over-fitting is to give the same metrics on the Test Set and Training Set, and compare them.
+
+Comment:
+
+
+6. Evaluate your model on the Test Set data. How confident are you that your model  does not over-fit the Training Set data?
+A. Choose between three broad degrees of confidence: very somewhat or not at � � � � � all. 
+(Note that not at all is still an acceptable answer if you give persuasive � � � reasons for why you chose this answer).
+
+B. Explain the evidence your degree of confidence is based upon. Your explanation should include the test set profits and training set
+profits per applicant. How much confidence to have in the model must relate to the relationship between the profits-per-applicant on
+the Training Set and the Test Set 
+
+Comment:
+The relationship between the predictors and response is highly.
