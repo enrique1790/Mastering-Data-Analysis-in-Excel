@@ -6,6 +6,22 @@ You will be asked to provide feedback to your peers in the following areas:
 Does the submitted model include at least 2 of the 6 pieces of data about the credit card applicants (age, years at current employer, years at current address, income over the past year, current credit card debt, and current automobile debt)? (2 pts)
 Some criteria is better than others. Variables with higher correlation tends to be have more predicting power.
 
+1.  What is your predictive model?
+a. Describe the arithmetic clearly so that another learner could implement your  model on new standardized input data if they wished.
+
+b. Give an example of the score you would assign the following applicant, whether they would be approved or rejected for a credit card and why.
+My predictive model is 
+
+Comment:
+(Income - Credit Card Debt - Auto Debt) / (Age*Years at employer*Years at address) the less outcome, the better. Then, I did 
+standardized Data by using 
+(Output from my model per applicant - mean)/ Std. 
+
+and my conclusion is
+
+When the output from standardized test <= -0.20 that mean the bank can approve, 
+while when the output from standardized test > -0.20 that mean the bank should reject.
+
 2. Is the minimum cost per event an acceptable cost per event? (3 pts)
 
 =>$1150 - poor
@@ -13,7 +29,20 @@ Some criteria is better than others. Variables with higher correlation tends to 
 >800 to <= 1000 – very good
 <800 – excellent
 
+Comment:
+According to my model, the bank would approved this applicant which the test score
+is -0.278, less than -0.2.
+
+
 3. Does the learner provide a clear recommendation for which model (or combinations of models) to use to select future credit card 
 applicants? (2 pts)
 
+Comment:
+The bank's average profit is $2,011 per applicant when using my predictive model on the training set.
+
+
 4. Does the learner provide an explanation for their choice which references at least two topics/points from the course? (3 pts).
+Comment:
+The incremental financial value per applicant of my model over no model on the Training Set is $122 per applicant.
+
+
