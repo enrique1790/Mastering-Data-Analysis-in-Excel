@@ -3,46 +3,94 @@ Mentor Hints for Week 6 Quiz Part V
 Grading Criteria
 
 You will be asked to provide feedback to your peers in the following areas:
-Does the submitted model include at least 2 of the 6 pieces of data about the credit card applicants (age, years at current employer, years at current address, income over the past year, current credit card debt, and current automobile debt)? (2 pts)
+Does the submitted model include at least 2 of the 6 pieces of data about the credit card applicants (age, years at current employer, 
+years at current address, income over the past year, current credit card debt, and current automobile debt)? (2 pts)
 Some criteria is better than others. Variables with higher correlation tends to be have more predicting power.
 
 1.  What is your predictive model?
 a. Describe the arithmetic clearly so that another learner could implement your  model on new standardized input data if they wished.
+-(( Standardized Income + Standardized Credit Card Debt + Standardized Automobile Debt) 10 * 
+(Standardized Age + Standardized Years at Employer)) �
 
-b. Give an example of the score you would assign the following applicant, whether they would be approved or rejected for a credit card and why.
+Applying the model:
+the Area Under the Curve (AUC) is .73.
+the Minimum Cost Per Event is $891.5 and is at threshold -1.2.
+
+b. Give an example of the score you would assign the following applicant, whether they would be approved or rejected for a credit card 
+and why.
 My predictive model is 
 
-Comment:
-(Income - Credit Card Debt - Auto Debt) / (Age*Years at employer*Years at address) the less outcome, the better. Then, I did 
-standardized Data by using 
-(Output from my model per applicant - mean)/ Std. 
-
-and my conclusion is
-
-When the output from standardized test <= -0.20 that mean the bank can approve, 
-while when the output from standardized test > -0.20 that mean the bank should reject.
-
+Comment: Refer to the text box below for a response to part b of the question.
+ 
+ 
 2. Is the minimum cost per event an acceptable cost per event? (3 pts)
-
 =>$1150 - poor
 >100 to <= 1150 – good
 >800 to <= 1000 – very good
 <800 – excellent
 
 Comment:
-According to my model, the bank would approved this applicant which the test score
-is -0.278, less than -0.2.
+-(( Standardized Income + Standardized Credit Card Debt + Standardized Automobile Debt) 10 * 
+(Standardized Age + Standardized Years at Employer)) �
+-((-0.38 + .14 + -0.06) 10 * (-0.06 + .23)) = 2.00 �
 
+Since 2.00 is higher than the threshold of -1.2 (previously stated), the applicant would be included in the selection 
+(would be approved).
 
 3. Does the learner provide a clear recommendation for which model (or combinations of models) to use to select future credit card 
 applicants? (2 pts)
 
 Comment:
-The bank's average profit is $2,011 per applicant when using my predictive model on the training set.
+141(True Positive Count) * 4,000 (Average Profits per Profitable Customer) = $564,000
++
+7 (False Negative Count) * -4,900 (Average Loses per Unprofitable Customer) = -34,300
+= $529,700
 
+Divided by 200 = $2,648.50
 
 4. Does the learner provide an explanation for their choice which references at least two topics/points from the course? (3 pts).
 Comment:
-The incremental financial value per applicant of my model over no model on the Training Set is $122 per applicant.
+T4,900 (Cost per False Negative) * 25% (proportion of unprofitable applicants) =
+$1,225
+-
+$891.5 (Predictive Model Minimum Cost per Event)
+= $333.5
+
+5 Evaluate your model on the Test Set data. How confident are you that your model does not over-fit the Training Set data? The only 
+basis to evaluate over-fitting is to give the same metrics on the Test Set and Training Set, and compare them.
+
+Comment: Refer to the text box below for a response concerning over-fitting.
+
+6 Evaluate your model on the Test Set data. How confident are you that your model does not over-fit the Training Set data?
+
+A. Choose between three broad degrees of confidence: very somewhat or not at � � � � � all. (Note that not at all is still an
+acceptable answer if you give persuasive � � � reasons for why you chose this answer).
+
+B. Explain the evidence your degree of confidence is based upon. Your explanation should include the test set profits and training
+set profits per applicant.
+
+How much confidence to have in the model must relate to the relationship between the profits-per-applicant on the Training Set and the 
+Test Set Using the predictive model on the Test Set, the Area Under the Curve (AUC) is .74. Additionally, using the threshold of -1.2
+(from the predictive model on the training set), the minimum cost per event $1,192. Using the test set data, the average profit per 
+applicant is:
+
+134 (True Positive Count) * 4,000 (Average Profits per Profitable Customer) = $536,000
++
+16 (False Negative Count) * -4,900 (Average Loses per Unprofitable Customer) = -78,400
+
+= $457,600
+Divided by 200
+= $2,288.00
+
+134 (True Positive Count) * 4,000 (Average Profits per Profitable Customer) = $536,000
++
+16 (False Negative Count) * -4,900 (Average Loses per Unprofitable Customer) = -78,400
+
+= $457,600
+Divided by 200
+= $2,288.00
+
+* Since the average profit is lower under the Test Set (compared to the Training Set) but higher than the average profit per applicant 
+using no model, I am somewhat confidant that the predictive model does not over-fit the Training Set data.
 
 
