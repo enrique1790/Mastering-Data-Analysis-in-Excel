@@ -7,6 +7,10 @@ Click to download week 6 Excel workbook
 Refer back to the Test Incidence, Positive Predictive Value and Negative Predictive Value of your Test from Part 1
 Conditional entropy of default is H( X | Y )
 
+Hint: Hint: you need your model s true positive rate from Part 1, Question 12, and test � � incidence [proportion of events your model 
+classifies as default] from Part 1, � question 13. Use the condition incidence of 25% and your model s True Positive rate �
+to calculate the portion of TPs. Then you have the inputs needed to use the Information Gain Calculator Spreadsheet.
+
 Comment: 
 1 r
 
