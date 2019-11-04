@@ -25,15 +25,20 @@ There are many ways to build your model, and here is one simple way using Excel:
 1) Identify highly correlated variables with the Outcome(the column with 1 and 0) by using LINEST function in Excel
 2) Run regression analysis with the best correlated variables (Data analysis/Regression). More about Regression in Excel
 
-Comment:
+Model -(( Standardized Income + Standardized Credit Card Debt + Standardized Automobile Debt) 10 * 
+(Standardized Age + Standardized Years at Employer))
 1 r
+
+* Although the quiz tool will tell you the answer you entered is correct, this is an automated answer. In fact, there is no exact 
+answer. Working through the final project will tell you if you have a viable model - but in the end being a business data analyst
+requires using your own judgment
 
 ## Question 2
 <.5 is not valid
 .5 to < .59 is low value
 .6 - .75 is ok
 .75 - .86 is very good
->.86 is probably too good to be true
+>.86 is very good - perhaps too good to be sustainable on new data
 
 Comment:
 12 x
@@ -43,6 +48,24 @@ Comment:
 dividing by -1.
 .5 has no predictive value.
 .9 or higher is too good to be true!))))
+
+<.50
+is not correct
+
+.50 has
+no predictive value
+
+.51 to
+< .59 is low
+
+.6 -
+.75 is good
+
+.75 -
+.85 is very good
+
+>.85
+is very good - perhaps too good to be sustainable on new data
 
 ## Question 3
 If the test set AUC is much worse than the training set AUC, consider making your model simpler – probably using fewer input variables
@@ -72,6 +95,8 @@ Comment:
 3.5 r
 ((((Thresholds greater than 2.5 may not be utilizing the full range for analysis � 
 Thresholds less than -2.5 0 may not be utilizing the full range for analysis)))))))
+
+* Good answers should use the full range from -3.5 to 3.5 – so given thresholds should be between about -2.5 to 2.5.
 
 ## Question 5 (Don't include "$")
 Any answer > $1250 has no incremental value – is simply wrong
@@ -111,6 +136,8 @@ Comment:
 < $250 to <= $450 savings is a very good model
 >$450 savings is an excellent model))))))))
 
+Your answer fell within the acceptable range.
+
 ## Question 8 (Don't include "days")
 Take the earning from each card and multiply by the number of credit card applicants per day will give you the money earned per day.
 
@@ -138,7 +165,7 @@ Any model that is reducing uncertainty will have a True Positive Rate...
 Comment:
 ...Equal to the Test Incidence (% of outcomes classified as "default") x
 ...Less than the Test Incidence (% of outcomes classified as "default") x
-...Greater than the Test Incidence (% of outcomes classified as "default")
+...Greater than the Test Incidence (% of outcomes classified as "default") R
 
 ## Question 10
 Given that the base rate of default in the population is 25%, any test that is reducing uncertainty will have a Positive 
@@ -147,7 +174,7 @@ Predictive Value (PPV)...
 Comment:
 ...Equal to .25 x
 ...Less than .25 x
-...Greater than .25
+...Greater than .25 R
 
 ## Question 11
 Given that the base rate of default in the population is 25%, any test that is reducing uncertainty will have a Negative Predictive 
@@ -156,7 +183,7 @@ Value (NPV)...
 Comment:
 Equal to .75 x
 ...Less than .75 x
-...Greater than .75
+...Greater than .75 R
 
 ## Question 12
 Confusion Matrix Metrics. To determine all performance metrics for a binary classification, it is sufficient to have three values
@@ -192,6 +219,6 @@ have a Test Incidence equal to the Condition Incidence but most classification �
 systems are focused on avoiding false negatives and have a higher Test Incidence
 than Condition Incidence.
 
-
+TP + FP / total number of sample, [$536,000 + (-78,400)]/2 = $2,288.00
 
 
