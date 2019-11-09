@@ -1,0 +1,98 @@
+Example 1:
+https://www.coursera.org/learn/analytics-excel/peer/sDcrc/part-5-modeling-credit-card-default-risk-and-customer-profitability/review-next
+
+What is your predictive model?
+Model: (Credit Card debt + Automobile debt) / income (The negatives are removed from the debt).
+This will give an AUC of 0.74 in the training set
+Example: For the given example if we use the above model the score would be 0.53.
+The threshold for my model is 0.60
+The score is below the threshold and the applicant will be rejected. 
+
+Example: For the given example if we use the above model the score would be 0.53.
+The threshold for my model is 0.60
+The score is below the threshold and the applicant will be rejected.
+
+AUC = 0.74
+Total Profit = $4000*0.74 = 2960
+
+Average cost per event for the model = 977
+Incrementaol financial Value per applicant = 1775 -977 =$798
+
+When tested on the Test set the model got the following out puts:
+AUC = 0.73
+Average cost per event = 969
+At the threshold same as that of training set i.e. 0.6 the cost per event is 1033
+
+Somewhat confident.
+
+Example 2:
+I used the data for training set and got two models using the LINEST function. The first one reveals the relation between profit
+and all six inputs.
+
+The second one reveals the relation between default and all sic inputs.
+ABOUT PROFIT: y=5.947age+158.782employment-613.343address+0.077income-0.082card_debt-0.004auto_debt-3199.975
+ABOUT DEFAULT: y=0.01age+0.19employment-0.07address+0.64income-0.06card_debt-0.005auto_debt
+
+Age: -0.06
+Years at employer: 0.23
+Years at address: -0.58
+Income: -0.38
+Credit card debt: 0.14
+Auto debt: -0.06
+y=-0.1649
+using the model ABOUT DEFAULT, he got a score below 0 when assessing his possibility of default.
+He would be rejected for a credit card, for the score he got is below 0, which means he is much likely to default.
+
+I used the model ABOUT PROFIT to predict the profit and after adding them together, I got the answer of $1913.8 for 
+average profit per applicant.
+
+$138.80 ($138.80 = $1913.8 - $1775, $1913.8 is the answer given in the last question and $1775 is the profit without a model)
+
+Not at all.
+
+I give the answer taking the profit per applicant as a main weighing elements.
+It is unfortunate for me to get a lower average profit per applicant on the test set, which means my model might be overfitting for
+the training set.
+
+Example 3:
+My predictive model is: ( Standardized Income + Standardized Credit Card Debt + Standardized Automobile Debt)  10 * 
+(Standardized Age + Standardized Years at Employer)
+Applying the model:the Area Under the Curve (AUC) is .73.the Minimum Cost Per Event is $891.5 and is at threshold -1.2.
+b. Refer to the text box below for a response to part b of the question 2
+
+Using the predictive model, the applicant listed in the question would have the following score: 
+( Standardized Income + Standardized Credit Card Debt + Standardized Automobile Debt)  10 * (Standardized Age + Standardized Years at
+Employer)-(-0.38 + .14 + -0.06) 10 * (-0.06 + .23)) = 2.00Since 2.00 is higher than the threshold of -1.2 (previously stated),
+the applicant would be included in the selection (would be approved).
+
+Using the predictive model on the Training Set, the average profit per applicant is:141(True Positive Count) * 4,000 
+(Average Profits per Profitable Customer) =$564,000 + 7 (False Negative Count) * -4,900 (Average Loses per Unprofitable Customer) 
+= -34,300= $529,700Divided by 200= $2,648.50
+
+Using the predictive model (compared to no model), the incremental financial value on the Training Set is:
+4,900 (Cost per False Negative) * 25% (proportion of unprofitable applicants) = $1,225-$891.5 (Predictive Model Minimum Cost per Event)
+= $333.5
+
+Using the predictive model on the Test Set, the Area Under the Curve (AUC) is .74.
+Additionally, using the threshold of -1.2 (from the predictive model on the training set), the minimum cost per event $1,192. 
+Using the test set data, the average profit per applicant is:
+134 (True Positive Count) * 4,000 (Average Profits per Profitable Customer) =$536,000+16 (False Negative Count) 
+* -4,900 (Average Loses per Unprofitable Customer) =-78,400
+= $457,600
+Divided by 200
+= $2,288.00
+Since the average profit is lower under the Test Set (compared to the Training Set)
+but higher than the average profit per applicant using no model, I am somewhat confident that the predictive model does not over-fit
+the Training Set data.
+
+Using the predictive model on the Test Set, the Area Under the Curve (AUC) is .74.
+Additionally, using the threshold of -1.2 (from the predictive model on the training set), the minimum cost per event $1,192. 
+Using the test set data, the average profit per applicant is:
+134 (True Positive Count) * 4,000 (Average Profits per Profitable Customer) =$536,000+16 (False Negative Count) * -4,900 (Average
+Loses per Unprofitable Customer) =-78,400
+= $457,600
+Divided by 200
+= $2,288.00
+Since the average profit is lower under the Test Set (compared to the Training Set)
+but higher than the average profit per applicant using no model, I am somewhat confident that the predictive model does not over-fit
+the Training Set data.
