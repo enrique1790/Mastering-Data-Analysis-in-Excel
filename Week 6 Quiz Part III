@@ -79,16 +79,24 @@ H(X|Y) = .375*(.48*log[2](1/.48)+.52*log[2](1/.52))+.625*(.89*log[2](1/.89)+.11*
 
 Comment: 
 .1305 bits per event x
+.1205 bits per event r
 
 ## Question 6 On the test set, what is the Eggertopia scores’ Percentage Information Gain (PIG)?
 Percentage Information Gain (PIG) = Information Gain/initial entropy
 
 Comment: 
+15.35 x
 15.25% x
+13.95 x
+14.85 r
 
 ## Question 7 If Eggertopia data were free, and your model were unavailable, what would the dollar savings per bit of information
 extracted be?
 Saving per bit = $ saved / bits extracted
+
+Answer:
+For problem 7, I think the correct answer should be $3419, but there is no such option. The system considers $3427 as the correct one.
+Saving per bit = $ savings-per-event / mutual information = $412/0.1205 = $3419
 
 Comment: 
 Value would be $427 per bit. x
