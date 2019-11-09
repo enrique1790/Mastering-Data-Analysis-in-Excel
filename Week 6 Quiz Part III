@@ -11,6 +11,12 @@ Hint: Hint: you need your model s true positive rate from Part 1, Question 12, a
 classifies as default] from Part 1, � question 13. Use the condition incidence of 25% and your model s True Positive rate �
 to calculate the portion of TPs. Then you have the inputs needed to use the Information Gain Calculator Spreadsheet.
 
+Answer:
+.30
+Conditional entropy of default is H( X | Y )
+From my answers that are marked as correct in part 2, I used those PPV and NPV values to calculate conditional entropy of 
+Eggertopia, H(X|Y) = c*H(PPV, 1-PPV) + d*H(1-NPV, NPV). And then, I(X;Y) = H(X) - H(X|Y) = 0.81128 - 0.68702 = 0.12426 bits per event.
+
 Comment: 
 1 r
 
@@ -19,11 +25,17 @@ Comment:
 Mutual information (Info. gain) calculated in units of bits per event and information Gain, in average bits per event are the same. 
 The question was repeating itself to make it more clear.
 
+Answer:
+Yes, they are the same. The question was repeating itself to make it more clear.
+
 Comment: 
 1 r
 
 ## Question 3 What is the Percentage Information Gain (PIG) of your test?
 Percentage Information Gain (PIG) = Information Gain/initial entropy
+Answer:
+Percentage Information Gain (PIG) = Information Gain/initial entropy
+Information Gain = Base rate - Model rate = H(X) - H(X|Y)
 
 Comment: 
 1 r
@@ -31,6 +43,10 @@ Comment:
 ## Question 4 How many dollars does the bank save, for every bit of information gain achieved by your model?
 Dollar saving = your dollar saved per event / your information gain. The numbers given in the question are used as samples, 
 just replace those numbers with the numbers you have.
+
+Answer:
+savings per event = base rate ($1250) - my minimum cost per event ($900) = $350. Information Gain for my model is I(X;Y) = .0855 bits.
+Dollar Saving = $350/.0855 = $4,093
 
 Comment: 
 1 r
@@ -51,6 +67,16 @@ Base rate = H(X) = .25*log[2](1/.25)+.75*log[2](1/.75)
 Model rate = H(X|Y) = c*H(PPV, 1-PPV) + d*H(1-NPV, NPV)
 Information Gain = Base rate - Model rate = H(X) - H(X|Y)
 
+Answer:
+Base Rate = (0.25, 0.75)
+And PPV = 0.48 [from Part 2, Quiz Question 8]
+NPV = 0.888 [can be calculated from known metrics, including the FP rate, cell BX14, using algebra]
+Test Incidence = (TP rate)(25%) + (FP rate)(.75) = .375
+I(X;Y) = H(X) – H(X|Y)
+H(X) = .25*log[2](1/.25)+.75*log[2](1/.75) = .8113 [Given in Question 2 Above]
+H(X|Y) = .375*(.48*log[2](1/.48)+.52*log[2](1/.52))+.625*(.89*log[2](1/.89)+.11*log[2](1/.11))
+=.6908
+
 Comment: 
 .1305 bits per event x
 
@@ -69,18 +95,31 @@ Value would be $427 per bit. x
 
 ## Question 8 What is the incremental information gain of the Eggertopia scores, over your model, in average bits per event, if any?
 If your model has higher information gain that eggertopia, Just give a negative number.
+Answer:
+Do I subtract the I(X;Y) of the eggertopia test data from the I(X;Y) of my model's test data? My equation looks like this .1205 - 
+.0855 = .035
 
 Comment: 
 1 r1 r
+
 ## Question 9 What is the maximum (break-even) price the bank should pay for Eggertopia scores, per score, if your model and data are 
 already available?
 If your model is better than Eggertopia, then pay negative value to Eggertopia. The answer will depend on your model.
+Answer:
+If your model is better than Eggertopia, then pay negative value to Eggertopia. The answer will depend on your model. Should I 
+subtract my question seven(choose) answer from question four answer. Am I right? Further, my dollar saved value of test data 
+(question four) is greater than the dollar saved by eggertopia score (question seven). Is my answer correct?
 
 Comment: 
 1 r
+
 ## Question 10 At the above maximum (break-even) price per score, what would be the value per bit of incremental information gained 
 from the Eggertopia scores? Give your answer in $/bit.
 Dividing maximum price the bank should pay (Question 8) by incremental information gain (Question 9)
+
+Answer:
+Dividing the maximum price the bank should pay by the incremental information gain (my answer from question 8).
+is 62/.035 correct?
 
 Comment: 
 1 r
